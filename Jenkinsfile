@@ -33,7 +33,7 @@ pipeline {
                 sh label: "构建镜像", script: "cd meiduo_mall && docker build -t meiduo_server:latest ."
 
                 echo "==================构建前端服务器=================="
-                sh label: "构建镜像", script: "cd meiduo_mall_fronted && docker build -t meiduo_web:latest ."
+                sh label: "构建镜像", script: "cd meiduo_mall_frontend && docker build -t meiduo_web:latest ."
             }
         }
         stage("启动后端服务器") {
