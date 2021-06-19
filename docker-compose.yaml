@@ -1,6 +1,6 @@
 version: "2.0"
 services:
-  meiduo_server:
+  server:
     image: meiduo_server:latest
     restart: always
     volumes:
@@ -12,24 +12,21 @@ services:
         max-file: "5"
     ports:
     - "8000:8000"
-    mem_limit: 200m #内存限制
 
 
-  meiduo_web:
+  web:
     image: meiduo_web:latest
     restart: always
     ports:
     - "80:80"
-    mem_limit: 200m #内存限制
 
 #--------------第一次构建时请打开注释----------------
 
-  meiduo_redis:
+  redis:
     image: redis:6.0.13
     restart: always
     ports:
       - "6379:6379"
-    mem_limit: 200m #内存限制
 
 
 
