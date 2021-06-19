@@ -1,0 +1,35 @@
+version: "2.0"
+services:
+  meiduo_server:
+    image: meiduo_server:latest
+    restart: always
+    volumes:
+      - /var/local/meiduo_mall/meiduo_server/logs:/var/log/
+    logging:
+      driver: json-file
+      options:
+        max-size: "30m"
+        max-file: "5"
+    ports:
+    - "8000:8000"
+    mem_limit: 200m #内存限制
+
+
+  meiduo_web:
+    image: meiduo_web:latest
+    restart: always
+    ports:
+    - "80:80"
+    mem_limit: 200m #内存限制
+
+#--------------第一次构建时请打开注释----------------
+
+  meiduo_redis:
+    image: redis:6.0.13
+    restart: always
+    ports:
+      - "6379:6379"
+    mem_limit: 200m #内存限制
+
+
+
