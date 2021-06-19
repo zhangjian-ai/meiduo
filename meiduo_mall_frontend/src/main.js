@@ -108,7 +108,9 @@ axios.interceptors.response.use(
                     })
             }
         }
-        return Promise.reject(error.response.data)   // 返回接口返回的错误信息
+        // return Promise.reject(error.response.data)   // 返回接口返回的错误信息
+        return Promise.reject(error.response)   // 返回接口返回的错误信息
+
     });
 
 Vue.prototype.$axios = axios;    //全局注册，使用方法为:this.$axios

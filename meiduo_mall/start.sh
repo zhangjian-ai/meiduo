@@ -4,8 +4,8 @@
 # 2. 根据数据库迁移文件来修改数据库
 # 3. 用 uwsgi启动 django 服务, 不再使用python manage.py runserver
 #python manage.py collectstatic --noinput&&
-python3 manage.py makemigrations &&
-python3 manage.py migrate &&
+python3 manage.py makemigrations
+python3 manage.py migrate
 uwsgi  --enable-threads uwsgi.ini
 
 # 保持容器内部有一个前台进程在运行,这里用消息队列保持

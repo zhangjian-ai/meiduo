@@ -22,11 +22,11 @@ services:
 
 #--------------第一次构建时请打开注释----------------
 
-  redis:
-    image: redis:6.0.13
-    restart: always
-    ports:
-      - "6379:6379"
+#  redis:
+#    image: redis:6.0.13
+#    restart: always
+#    ports:
+#      - "6379:6379"
 
 
 
