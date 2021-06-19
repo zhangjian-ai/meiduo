@@ -1,0 +1,17 @@
+# 短信验证码的过期时间单位秒
+SMS_CODE_REDIS_EXPIRES = 300
+
+# 短信验证码发送时间周期
+SEND_SMS_CODE_INTERVAL = 60
+
+# 测试短信模板ID
+SEND_SMS_TEMPLATE_ID = 1
+
+# 用户最大地址数
+USER_MAX_ADDRESS_COUNT = 20
+
+# 用户浏览记录最大保留条数
+USER_MAX_BROWSING_HISTORY_COUNT = 5
+
+# 购物车记录保存时间
+CART_COOKIE_EXPIRES = 30 * 24 * 60 * 60

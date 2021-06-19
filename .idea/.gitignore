@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### webpack ###
+meiduo_mall_fronted/node_modules/
+
+*.log
+
