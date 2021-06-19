@@ -8,10 +8,9 @@ pipeline {
             steps {
                 // 当前stage报错时，设置构建结果为成功，保证后续stage继续执行
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
-//                     echo "==================关闭老版本容器=================="
-//                     sh label: "停止前端容器", script: "docker stop student-web"
-//                     sh label: "停止后端容器", script: "docker stop student-server"
-
+                    echo "==================关闭老版本容器=================="
+                    sh label: "停止前端容器", script: "docker stop meiduo_server_1"
+                    sh label: "停止后端容器", script: "docker stop meiduo_web_1"
                 }
             }
         }

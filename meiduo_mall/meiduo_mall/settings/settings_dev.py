@@ -276,7 +276,7 @@ LOGGING = {
 }
 
 # 设置静态文件收集目录
-STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'meiduo_mall_frontend/dist/static')
+STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'meiduo_mall_frontend/static')
 
 # rest_framework 相关配置
 REST_FRAMEWORK = {
