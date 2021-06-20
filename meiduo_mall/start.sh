@@ -7,7 +7,7 @@
 python3 manage.py makemigrations
 python3 manage.py migrate
 #uwsgi  --enable-threads uwsgi.ini
-uwsgi --ini uwsgi.ini
+nohup uwsgi --ini uwsgi.ini &
 
 # 保持容器内部有一个前台进程在运行,这里用消息队列保持
 #while true
