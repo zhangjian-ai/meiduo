@@ -277,10 +277,14 @@ LOGGING = {
     }
 }
 
-# 设置静态文件收集目录
-STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'meiduo_mall/static')
-# Django访问静态文件的路径，相对于BASE_DIR
-STATIC_URL = '/static/'
+# # 设置静态文件收集目录
+# STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'meiduo_mall/static')
+# # Django访问静态文件的路径，相对于BASE_DIR
+# STATIC_URL = '/static/'
+# # 配置静态资源目录
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "/static"),
+# ]
 
 # rest_framework 相关配置
 REST_FRAMEWORK = {
