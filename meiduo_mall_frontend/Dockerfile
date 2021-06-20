@@ -6,7 +6,6 @@ FROM nginx:latest
 RUN mkdir -p /usr/share/nginx/html/media \
 && mkdir -p /usr/share/nginx/ssl
 COPY dist/  /usr/share/nginx/html/
-COPY static/  /usr/share/nginx/html/
 # 添加配置文件
 COPY nginx.conf  /etc/nginx/nginx.conf
 # 关闭守护模式
