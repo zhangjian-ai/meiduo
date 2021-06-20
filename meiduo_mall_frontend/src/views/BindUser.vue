@@ -220,6 +220,10 @@ export default {
               sessionStorage.username = res.data.username;
               sessionStorage.user_id = res.data.id;
 
+              that.$store.commit("setStatus", {
+                username: res.data.username,
+                token: res.data.token
+              });
               // 返回起始页
               that.$router.replace(that.$route.query.redirect || "/");
             }
@@ -240,6 +244,10 @@ export default {
               sessionStorage.username = res.data.username;
               sessionStorage.user_id = res.data.id;
 
+              that.$store.commit("setStatus", {
+                username: res.data.username,
+                token: res.data.token
+              });
               // 返回起始页
               that.$router.replace(that.$route.query.redirect || "/");
             }

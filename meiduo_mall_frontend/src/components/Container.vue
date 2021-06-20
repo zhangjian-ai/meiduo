@@ -81,9 +81,7 @@ export default {
       this.username = this.$store.state.username;
       this.state = true;
     }
-    else{
-      this.$router.go(0);
-    }
+
   }
 };
 </script>
