@@ -1,4 +1,4 @@
-FROM centos/python-36-centos7:latest
+FROM python:3.8
 # 在容器内/var/www/html/下创建 工作文件夹
 RUN mkdir -p /var/www/html/meiduo_mall
 # 将当前目录文件加入到容器工作目录中（. 表示当前Dockerfile宿主机目录）

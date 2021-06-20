@@ -104,9 +104,13 @@ export default {
     };
   },
   mounted() {
-    this.category_id = this.$route.query.category_id;
-    this.get_sku();
-    this.get_top_sku();
+    if (this.$route.query.category_id) {
+      this.category_id = this.$route.query.category_id;
+      this.get_sku();
+      this.get_top_sku();
+    }else{
+      this.$router.replace({name: 'home'})
+    }
   },
   methods: {
     // 这是分页函数
@@ -153,7 +157,7 @@ export default {
     $route(to, from) {
       if (to.query.category_id != from.query.category_id) {
         this.category_id = to.query.category_id;
-        this.get_sku(); 
+        this.get_sku();
         this.get_top_sku();
       }
     }
