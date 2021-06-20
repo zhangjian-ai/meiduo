@@ -76,12 +76,13 @@ export default {
     Search
   },
   mounted() {
-    //
-
     // 获取账号信息
     if (this.$store.state.username) {
       this.username = this.$store.state.username;
       this.state = true;
+    }
+    else{
+      this.$router.go(0);
     }
   }
 };
