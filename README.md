@@ -1,9 +1,11 @@
 # meiduo
 
-美多商城项目：
+美多商城项目:
 
 开发模式：Django + Vue 前后端分离
-设计技术：celery、FastDFS、ElaticSearch、redis、MySQL读写分离
+
+涉及技术：celery、FastDFS、ElaticSearch、redis、MySQL读写分离
+
 部署方式：docker容器部署 nginx(vue) + uwsgi(django)
 
 
