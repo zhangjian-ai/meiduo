@@ -151,8 +151,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-
 # -------------------以下为项目新增或修改的配置------------------------
 
 # 追加跨域白名单，指定那些域名可以访问后端接口
@@ -281,6 +279,8 @@ LOGGING = {
 
 # 设置静态文件收集目录
 STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'meiduo_mall_frontend/dist/static')
+# Django访问静态文件的路径，相对于BASE_DIR
+STATIC_URL = '/static/'
 
 # rest_framework 相关配置
 REST_FRAMEWORK = {
