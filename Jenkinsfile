@@ -12,8 +12,6 @@ pipeline {
                 // 当前stage报错时，设置构建结果为成功，保证后续stage继续执行
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
                     echo "==================关闭老版本容器=================="
-//                     sh label: "停止前端容器", script: "docker stop meiduo_server_1"
-//                     sh label: "停止后端容器", script: "docker stop meiduo_web_1"
                     sh label: "停止后端容器", script: "docker-compose down"
                 }
             }
@@ -23,9 +21,9 @@ pipeline {
                 // 当前stage报错时，设置构建结果为成功，保证后续stage继续执行
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
                     echo "==================开始环境清理工作=================="
+                    sh script: "docker rmi \$(docker images | grep 'none' | awk '{print \$3}')"
                     sh script: "docker stop \$(docker ps -a | grep 'Exited' | awk '{print \$1 }')"
                     sh script: "docker rm \$(docker ps -a | grep 'Exited' | awk '{print \$1 }')"
-                    sh script: "docker rmi \$(docker images | grep 'none' | awk '{print \$3}')"
                 }
             }
         }
@@ -39,7 +37,7 @@ pipeline {
                 sh label: "构建镜像", script: "cd meiduo_mall_frontend && docker build -t meiduo_web:latest ."
             }
         }
-        stage("启动后端服务器") {
+        stage("启动服务") {
             steps {
                 echo "==================启动容器=================="
                 sh label: "构建镜像", script: "docker-compose up -d"
