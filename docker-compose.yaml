@@ -21,8 +21,6 @@ services:
     networks:
       extnetwork:
         ipv4_address: 172.19.0.2
-    ports:
-    - "8000:8000"
 
 
   web:
@@ -44,6 +42,8 @@ services:
       - server
     ports:
     - "8080:80"
+    - "8000:8000"
+
 
 #--------------第一次构建时请打开注释----------------
 
