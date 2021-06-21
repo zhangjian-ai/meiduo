@@ -6,7 +6,6 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    # 配置settings文件路径
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'meiduo_mall.settings.settings_dev')
     try:
         from django.core.management import execute_from_command_line

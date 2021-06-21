@@ -54,7 +54,7 @@ class JenkinsBuild:
                         result = self.jenkins_con.get_build_info(job_name, build_number).get('result')
                         logging.info('构建结果：' + result)
                         logging.info(self.jenkins_con.get_build_console_output(job_name, build_number))
-                        break
+                        return
 
                 except jenkins.JenkinsException as e:
                     logging.info('{} is not start,waiting.....'.format(build_number))
