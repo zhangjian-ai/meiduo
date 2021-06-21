@@ -7,7 +7,7 @@ version: "2.0"
 #         - subnet: 172.19.0.0/16
 #           gateway: 172.19.0.1
 #
-#services:
+services:
 #  server:
 #    image: meiduo_server:latest
 #    container_name: md_server
