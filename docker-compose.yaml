@@ -14,7 +14,7 @@ services:
     restart: always
     volumes:
       - /var/local/meiduo_mall/meiduo_server/logs:/var/log/
-      - /var/local/meiduo_mall/meiduo_server/logs/meiduo_mall.log:/var/www/html/meiduo_mall/logs/meiduo_mall.log
+      - /var/local/meiduo_mall/meiduo_server/logs/:/var/www/html/meiduo_mall/logs/
     logging:
       driver: json-file
       options:
