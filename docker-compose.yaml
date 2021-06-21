@@ -49,19 +49,21 @@ services:
 
 ##---------------第一次构建时请打开注释----------------
 #
-#  redis:
-#    image: redis:6.0.13
-#    container_name: md_redis
-#    restart: always
-#    volumes:
-#    - /var/local/meiduo_mall/redis/data:/data
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: "5m"
-#        max-file: "3"
-#    ports:
-#      - "6379:6379"
+  redis:
+    image: redis:4.0
+    container_name: md_redis
+    restart: always
+    volumes:
+    - /var/local/meiduo_mall/redis/data:/data
+    - /var/local/meiduo_mall/redis/conf/redis.conf:/etc/redis/redis.conf:rw
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+    command: redis-server /etc/redis/redis.conf --appendonly yes
+    ports:
+      - "6379:6379"
 #
 #
 #  ES:
