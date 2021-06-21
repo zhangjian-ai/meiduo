@@ -1,50 +1,50 @@
 version: "2.0"
 
-networks:
-   extnetwork:
-      ipam:
-         config:
-         - subnet: 172.19.0.0/16
-           gateway: 172.19.0.1
-
-services:
-  server:
-    image: meiduo_server:latest
-    container_name: md_server
-    restart: always
-    volumes:
-      - /var/local/meiduo_mall/meiduo_server/logs:/var/log/
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "5"
-    networks:
-      extnetwork:
-        ipv4_address: 172.19.0.2
-
-
-  web:
-    image: meiduo_web:latest
-    container_name: md_web
-    restart: always
-    volumes:
-      - /var/local/meiduo_mall/nginx/logs:/var/log/nginx/
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "5"
-    networks:
-      extnetwork:
-        ipv4_address: 172.19.0.3
-    depends_on:
-      - server
-    links:
-      - server
-    ports:
-    - "8080:80"
-    - "8000:8000"
+#networks:
+#   extnetwork:
+#      ipam:
+#         config:
+#         - subnet: 172.19.0.0/16
+#           gateway: 172.19.0.1
+#
+#services:
+#  server:
+#    image: meiduo_server:latest
+#    container_name: md_server
+#    restart: always
+#    volumes:
+#      - /var/local/meiduo_mall/meiduo_server/logs:/var/log/
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: "10m"
+#        max-file: "5"
+#    networks:
+#      extnetwork:
+#        ipv4_address: 172.19.0.2
+#
+#
+#  web:
+#    image: meiduo_web:latest
+#    container_name: md_web
+#    restart: always
+#    volumes:
+#      - /var/local/meiduo_mall/nginx/logs:/var/log/nginx/
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: "10m"
+#        max-file: "5"
+#    networks:
+#      extnetwork:
+#        ipv4_address: 172.19.0.3
+#    depends_on:
+#      - server
+#    links:
+#      - server
+#    ports:
+#    - "8080:80"
+#    - "8000:8000"
 
 
 ##---------------第一次构建时请打开注释----------------
