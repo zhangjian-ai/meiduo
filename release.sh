@@ -11,7 +11,7 @@ git commit -m "update new version"
 git push origin master
 echo "=============提交完成============="
 echo "=============构建任务============="
-python3 jenkins_release.py http://121/4/47/229:2500/ zhangjian Zj1340026934 meiduo
+python3 jenkins_release.py http://121.4.47.229:2500/ zhangjian Zj1340026934 meiduo
 
 
 
