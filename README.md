@@ -2,11 +2,16 @@
 
 美多商城项目:
 
+首页效果图：
+
+
 开发模式：Django + Vue 前后端分离
 
 涉及技术：celery、FastDFS、ElaticSearch、redis、MySQL读写分离
 
 部署方式：docker容器部署 nginx(vue) + uwsgi(django)
+
+
 
 
 给出体验地址：121.4.47.229:8080

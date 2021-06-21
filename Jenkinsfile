@@ -20,10 +20,19 @@ pipeline {
             steps {
                 // 当前stage报错时，设置构建结果为成功，保证后续stage继续执行
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
-                    echo "==================开始环境清理工作=================="
+                    echo "==================清理环境=================="
                     sh script: "docker rmi \$(docker images | grep 'none' | awk '{print \$3}')"
                     sh script: "docker stop \$(docker ps -a | grep 'Exited' | awk '{print \$1 }')"
                     sh script: "docker rm \$(docker ps -a | grep 'Exited' | awk '{print \$1 }')"
+                }
+            }
+        }
+        stage("收集后端静态文件") {
+            steps {
+                // 当前stage报错时，设置构建结果为成功，保证后续stage继续执行
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
+                    echo "==================收集后端静态文件=================="
+                    sh label: "构建镜像", script: "cd meiduo_mall && python3 manage.py collectstatic --noinput"
                 }
             }
         }
