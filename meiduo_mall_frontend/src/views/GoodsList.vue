@@ -94,10 +94,8 @@ export default {
   watch: {
     // 监听路由变化，解决同一url不同参数时，页面不刷新的问题
     $route(to, from) {
-        if (to.query.text != from.query.text) {
           this.text = to.query.text;
           this.get_goods(); // 重新加载数据
-        }
     }
   },
   components: {

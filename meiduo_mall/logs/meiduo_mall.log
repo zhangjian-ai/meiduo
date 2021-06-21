@@ -15962,3 +15962,701 @@ INFO 2021-06-19 14:38:21,264 basehttp 157 "OPTIONS /order/payment/20210619063728
 INFO 2021-06-19 14:38:21,681 basehttp 157 "GET /order/payment/2021061906372800536/ HTTP/1.1" 200 865
 INFO 2021-06-19 14:40:22,900 basehttp 157 "GET /orders/list/?page=1&page_size=10 HTTP/1.1" 200 2081
 INFO 2021-06-19 14:40:25,846 basehttp 157 "GET /order/payment/2021061906372800536/ HTTP/1.1" 200 863
+INFO 2021-06-21 09:24:22,242 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 09:24:41,357 basehttp 157 "OPTIONS /contents/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:24:41,357 basehttp 157 "OPTIONS /goods_channel/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:24:42,902 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 09:24:48,399 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 09:24:58,412 basehttp 157 "OPTIONS /orders/list/?page=1&page_size=10 HTTP/1.1" 200 0
+INFO 2021-06-21 09:24:58,747 basehttp 157 "GET /orders/list/?page=1&page_size=10 HTTP/1.1" 200 52
+INFO 2021-06-21 09:25:00,816 basehttp 157 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:25:01,245 basehttp 157 "GET /cart/ HTTP/1.1" 200 2
+INFO 2021-06-21 09:25:07,639 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 09:25:07,642 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 09:25:18,290 basehttp 157 "OPTIONS /sku_list/115/skus/?page=1&page_size=10&ordering=-create_time HTTP/1.1" 200 0
+INFO 2021-06-21 09:25:18,291 basehttp 157 "OPTIONS /sku_list/115/tops/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:25:18,654 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 09:25:18,670 basehttp 157 "GET /sku_list/115/tops/ HTTP/1.1" 200 746
+INFO 2021-06-21 09:25:18,670 basehttp 157 "GET /sku_list/115/skus/?page=1&page_size=10&ordering=-create_time HTTP/1.1" 200 3809
+INFO 2021-06-21 09:25:20,976 basehttp 157 "OPTIONS /set_history/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:25:20,977 basehttp 157 "OPTIONS /sku_detail/12/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:25:21,352 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 09:25:21,430 basehttp 157 "POST /set_history/ HTTP/1.1" 201 13
+INFO 2021-06-21 09:25:21,598 basehttp 157 "GET /sku_detail/12/ HTTP/1.1" 200 5594
+INFO 2021-06-21 09:25:28,884 basehttp 157 "POST /cart/ HTTP/1.1" 201 47
+INFO 2021-06-21 09:25:32,573 basehttp 157 "POST /cart/ HTTP/1.1" 201 47
+INFO 2021-06-21 09:25:37,399 basehttp 157 "GET /sku_list/115/tops/ HTTP/1.1" 200 746
+INFO 2021-06-21 09:25:37,462 basehttp 157 "GET /sku_list/115/skus/?page=1&page_size=10&ordering=-create_time HTTP/1.1" 200 3809
+INFO 2021-06-21 09:25:37,462 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 09:25:38,381 basehttp 157 "OPTIONS /sku_detail/16/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:25:38,754 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 09:25:38,758 basehttp 157 "POST /set_history/ HTTP/1.1" 201 13
+INFO 2021-06-21 09:25:38,998 basehttp 157 "GET /sku_detail/16/ HTTP/1.1" 200 5598
+INFO 2021-06-21 09:25:42,231 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 09:25:44,126 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 09:25:48,074 basehttp 157 "POST /cart/ HTTP/1.1" 201 47
+INFO 2021-06-21 09:25:50,027 basehttp 157 "POST /cart/ HTTP/1.1" 201 47
+INFO 2021-06-21 09:25:51,587 basehttp 157 "GET /cart/ HTTP/1.1" 200 1629
+INFO 2021-06-21 09:26:02,709 basehttp 157 "OPTIONS /selects/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:26:03,134 basehttp 157 "POST /selects/ HTTP/1.1" 201 77
+INFO 2021-06-21 09:26:03,175 basehttp 157 "OPTIONS /address/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:26:03,176 basehttp 157 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+INFO 2021-06-21 09:26:03,734 basehttp 157 "GET /orders/settlement/ HTTP/1.1" 200 543
+INFO 2021-06-21 09:26:03,771 basehttp 157 "GET /address/ HTTP/1.1" 200 291
+INFO 2021-06-21 09:26:08,011 basehttp 157 "OPTIONS /orders/submit/ HTTP/1.1" 200 0
+ERROR 2021-06-21 09:26:09,333 serializers 128 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:26:09,508 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 87, in create
+    sku_id, spec = sku.decode().split('_', 1)
+AttributeError: 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:26:09,515 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 119361
+INFO 2021-06-21 09:26:50,689 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:26:51,018 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 09:27:03,408 serializers 128 Field 'id' expected a number but got "b'16".
+ERROR 2021-06-21 09:27:03,837 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: "b'16"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 89, in create
+    sku = SKU.objects.get(id=sku_id)
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Library/Python/3.8/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Python/3.8/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got "b'16".
+ERROR 2021-06-21 09:27:03,849 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 184064
+INFO 2021-06-21 09:27:30,786 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:27:31,126 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 09:27:34,222 serializers 129 Field 'id' expected a number but got "b'16".
+ERROR 2021-06-21 09:27:34,711 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: "b'16"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 90, in create
+    sku = SKU.objects.get(id=sku_id)
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Library/Python/3.8/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Python/3.8/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got "b'16".
+ERROR 2021-06-21 09:27:34,722 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 184041
+INFO 2021-06-21 09:27:56,406 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:27:56,733 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 09:28:01,480 serializers 129 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:28:01,655 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 88, in create
+    sku_id, spec = sku.decode().split('_', 1)
+AttributeError: 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:28:01,665 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 119353
+INFO 2021-06-21 09:30:10,379 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:30:10,715 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 09:30:17,904 basehttp 157 "GET /address/ HTTP/1.1" 200 291
+INFO 2021-06-21 09:30:18,674 basehttp 157 "GET /orders/settlement/ HTTP/1.1" 200 543
+ERROR 2021-06-21 09:30:21,920 serializers 130 Field 'id' expected a number but got "b'16".
+ERROR 2021-06-21 09:30:25,365 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: "b'16"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 91, in create
+    sku = SKU.objects.get(id=sku_id)
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Library/Python/3.8/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Python/3.8/site-packages/django/db/models/lookups.py", line 76, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got "b'16".
+ERROR 2021-06-21 09:30:25,376 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 183996
+INFO 2021-06-21 09:31:35,937 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:31:36,317 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 09:31:59,771 serializers 130 invalid literal for int() with base 10: "b'16"
+ERROR 2021-06-21 09:31:59,994 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 91, in create
+    sku = SKU.objects.get(id=int(sku_id))
+ValueError: invalid literal for int() with base 10: "b'16"
+ERROR 2021-06-21 09:32:00,003 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 118304
+INFO 2021-06-21 09:33:27,206 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:33:27,533 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 09:33:31,380 serializers 131 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:33:31,558 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 88, in create
+    sku = sku.decode()
+AttributeError: 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:33:31,565 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 119347
+INFO 2021-06-21 09:37:50,822 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:37:51,146 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 09:37:55,386 serializers 132 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:37:55,553 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 88, in create
+    sku = sku.decode()
+AttributeError: 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:37:55,561 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 119347
+INFO 2021-06-21 09:41:43,857 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:41:44,191 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 09:42:04,155 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:42:04,492 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 09:42:22,522 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 09:43:33,600 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 09:44:14,347 serializers 130 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:44:14,589 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 87, in create
+    sku = sku.decode()
+AttributeError: 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:44:14,597 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 119311
+ERROR 2021-06-21 09:44:29,674 serializers 130 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:44:29,862 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 87, in create
+    sku = sku.decode()
+AttributeError: 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:44:29,863 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 119311
+ERROR 2021-06-21 09:44:30,016 serializers 130 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:44:30,171 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 87, in create
+    sku = sku.decode()
+AttributeError: 'SKU' object has no attribute 'decode'
+ERROR 2021-06-21 09:44:30,172 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 119311
+INFO 2021-06-21 09:48:30,397 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 09:48:30,766 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 09:48:33,143 basehttp 157 "POST /orders/submit/ HTTP/1.1" 201 34
+INFO 2021-06-21 09:49:37,316 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 09:49:45,049 basehttp 157 "GET /cart/ HTTP/1.1" 200 2
+INFO 2021-06-21 09:49:46,959 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+ERROR 2021-06-21 09:55:36,666 exceptions 26 [<carts.views.CartView object at 0x107dc0130>] (2003, "Can't connect to MySQL server on '121.4.47.229' ([Errno 60] Operation timed out)")
+ERROR 2021-06-21 09:55:36,669 log 224 Insufficient Storage: /cart/
+ERROR 2021-06-21 09:55:36,670 basehttp 157 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:55:37,606 exceptions 26 [<carts.views.CartView object at 0x107f7c160>] (2003, "Can't connect to MySQL server on '121.4.47.229' ([Errno 60] Operation timed out)")
+ERROR 2021-06-21 09:55:37,607 log 224 Insufficient Storage: /cart/
+ERROR 2021-06-21 09:55:37,607 basehttp 157 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:56:03,118 exceptions 26 [<goods.views.GoodsChannelView object at 0x107eabfd0>] (2003, "Can't connect to MySQL server on '121.4.47.229' ([Errno 60] Operation timed out)")
+ERROR 2021-06-21 09:56:03,119 exceptions 26 [<content.views.ContentView object at 0x107eb04f0>] (2003, "Can't connect to MySQL server on '121.4.47.229' ([Errno 60] Operation timed out)")
+ERROR 2021-06-21 09:56:03,120 log 224 Insufficient Storage: /goods_channel/
+ERROR 2021-06-21 09:56:03,120 log 224 Insufficient Storage: /contents/
+ERROR 2021-06-21 09:56:03,121 basehttp 157 "GET /contents/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:56:03,122 basehttp 157 "GET /goods_channel/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:57:16,487 exceptions 26 [<goods.views.GoodsChannelView object at 0x107f146d0>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:57:16,489 log 224 Insufficient Storage: /goods_channel/
+ERROR 2021-06-21 09:57:16,490 basehttp 157 "GET /goods_channel/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:57:16,492 exceptions 26 [<content.views.ContentView object at 0x107ea2520>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:57:16,493 log 224 Insufficient Storage: /contents/
+ERROR 2021-06-21 09:57:16,493 basehttp 157 "GET /contents/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:57:37,641 exceptions 26 [<goods.views.GoodsChannelView object at 0x107f1b760>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:57:37,642 log 224 Insufficient Storage: /goods_channel/
+ERROR 2021-06-21 09:57:37,642 exceptions 26 [<content.views.ContentView object at 0x108802760>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:57:37,643 log 224 Insufficient Storage: /contents/
+ERROR 2021-06-21 09:57:38,430 exceptions 26 [<goods.views.GoodsChannelView object at 0x107eb04f0>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:57:38,430 exceptions 26 [<content.views.ContentView object at 0x107ebf670>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:57:38,432 log 224 Insufficient Storage: /goods_channel/
+ERROR 2021-06-21 09:57:38,432 log 224 Insufficient Storage: /contents/
+ERROR 2021-06-21 09:57:38,434 basehttp 157 "GET /goods_channel/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:57:38,435 basehttp 157 "GET /contents/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:58:15,873 exceptions 26 [<goods.views.GoodsChannelView object at 0x107ebf430>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:58:15,874 exceptions 26 [<content.views.ContentView object at 0x107eb08e0>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 09:58:15,875 log 224 Insufficient Storage: /goods_channel/
+ERROR 2021-06-21 09:58:15,876 log 224 Insufficient Storage: /contents/
+ERROR 2021-06-21 09:58:15,876 basehttp 157 "GET /goods_channel/ HTTP/1.1" 507 35
+ERROR 2021-06-21 09:58:15,877 basehttp 157 "GET /contents/ HTTP/1.1" 507 35
+INFO 2021-06-21 09:58:31,255 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:00:47,733 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:01:43,134 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:04:13,816 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:06:43,158 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:07:22,076 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:11:33,168 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:11:43,489 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:11:43,490 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 10:11:47,128 basehttp 157 "GET /cart/ HTTP/1.1" 200 2
+INFO 2021-06-21 10:11:50,746 basehttp 157 "GET /cart/ HTTP/1.1" 200 2
+INFO 2021-06-21 10:11:51,360 basehttp 157 "GET /cart/ HTTP/1.1" 200 2
+INFO 2021-06-21 10:11:52,041 basehttp 157 "GET /cart/ HTTP/1.1" 200 2
+INFO 2021-06-21 10:11:53,169 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:11:53,189 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 10:11:55,814 basehttp 157 "GET /sku_list/115/tops/ HTTP/1.1" 200 746
+INFO 2021-06-21 10:11:55,825 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:11:55,836 basehttp 157 "GET /sku_list/115/skus/?page=1&page_size=10&ordering=-create_time HTTP/1.1" 200 3809
+INFO 2021-06-21 10:11:58,684 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:11:58,793 basehttp 157 "POST /set_history/ HTTP/1.1" 201 13
+INFO 2021-06-21 10:11:59,073 basehttp 157 "GET /sku_detail/16/ HTTP/1.1" 200 5598
+INFO 2021-06-21 10:12:02,396 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 10:12:04,326 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 10:12:06,144 basehttp 157 "GET /cart/ HTTP/1.1" 200 545
+INFO 2021-06-21 10:12:09,921 basehttp 157 "POST /selects/ HTTP/1.1" 201 79
+INFO 2021-06-21 10:12:10,504 basehttp 157 "GET /orders/settlement/ HTTP/1.1" 200 545
+INFO 2021-06-21 10:12:10,508 basehttp 157 "GET /address/ HTTP/1.1" 200 291
+ERROR 2021-06-21 10:12:15,123 serializers 132 'str' object has no attribute 'stock'
+ERROR 2021-06-21 10:12:15,372 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 95, in create
+    origin_stock = sku.stock
+AttributeError: 'str' object has no attribute 'stock'
+ERROR 2021-06-21 10:12:15,379 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 118666
+INFO 2021-06-21 10:14:48,923 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 10:14:49,329 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:15:25,258 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:19:04,299 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:23:04,151 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:36:27,257 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 10:36:32,692 basehttp 157 "POST /orders/submit/ HTTP/1.1" 201 34
+INFO 2021-06-21 10:37:00,288 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 10:37:00,456 basehttp 157 "GET /cart/ HTTP/1.1" 200 2
+INFO 2021-06-21 10:37:02,566 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 10:37:06,678 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:37:07,091 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:37:09,647 basehttp 157 "GET /sku_list/115/tops/ HTTP/1.1" 200 746
+INFO 2021-06-21 10:37:09,663 basehttp 157 "GET /sku_list/115/skus/?page=1&page_size=10&ordering=-create_time HTTP/1.1" 200 3809
+INFO 2021-06-21 10:37:09,664 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:37:11,047 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 10:37:11,157 basehttp 157 "POST /set_history/ HTTP/1.1" 201 13
+INFO 2021-06-21 10:37:11,340 basehttp 157 "GET /sku_detail/16/ HTTP/1.1" 200 5598
+INFO 2021-06-21 10:37:14,723 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 10:37:18,077 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 10:37:21,584 basehttp 157 "GET /cart/ HTTP/1.1" 200 545
+INFO 2021-06-21 10:37:25,246 basehttp 157 "POST /selects/ HTTP/1.1" 201 79
+INFO 2021-06-21 10:37:25,760 basehttp 157 "GET /orders/settlement/ HTTP/1.1" 200 545
+INFO 2021-06-21 10:37:25,817 basehttp 157 "GET /address/ HTTP/1.1" 200 291
+INFO 2021-06-21 11:00:17,329 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:00:47,487 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:02:00,541 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 11:02:00,969 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:02:27,578 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:03:09,983 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:03:24,111 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 11:04:26,665 exceptions 26 [<orders.views.CommitOrderView object at 0x103947eb0>] (2003, "Can't connect to MySQL server on '121.4.47.229' (timed out)")
+ERROR 2021-06-21 11:04:26,666 log 224 Insufficient Storage: /orders/submit/
+ERROR 2021-06-21 11:04:26,667 basehttp 157 "POST /orders/submit/ HTTP/1.1" 507 35
+INFO 2021-06-21 11:04:32,315 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:06:34,081 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:08:43,939 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:12:44,416 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-21 11:12:48,639 serializers 143 local variable 'origin_sku_id' referenced before assignment
+ERROR 2021-06-21 11:12:48,848 log 224 Internal Server Error: /orders/submit/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/Library/Python/3.8/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py", line 96, in create
+    if origin_sku_id != sku_id:
+UnboundLocalError: local variable 'origin_sku_id' referenced before assignment
+ERROR 2021-06-21 11:12:48,897 basehttp 157 "POST /orders/submit/ HTTP/1.1" 500 118681
+INFO 2021-06-21 11:13:55,929 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/orders/serializers.py changed, reloading.
+INFO 2021-06-21 11:13:56,192 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-21 11:14:04,628 basehttp 157 "POST /orders/submit/ HTTP/1.1" 201 34
+INFO 2021-06-21 11:14:38,746 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 11:14:38,800 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 11:14:42,179 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 11:14:42,220 basehttp 157 "GET /sku_list/115/tops/ HTTP/1.1" 200 746
+INFO 2021-06-21 11:14:42,226 basehttp 157 "GET /sku_list/115/skus/?page=1&page_size=10&ordering=-create_time HTTP/1.1" 200 3809
+INFO 2021-06-21 11:14:43,579 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 11:14:43,662 basehttp 157 "POST /set_history/ HTTP/1.1" 201 13
+INFO 2021-06-21 11:14:43,899 basehttp 157 "GET /sku_detail/16/ HTTP/1.1" 200 5598
+INFO 2021-06-21 11:14:46,957 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 11:14:49,856 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+INFO 2021-06-21 11:14:52,670 basehttp 157 "GET /cart/ HTTP/1.1" 200 545
+INFO 2021-06-21 11:14:56,117 basehttp 157 "POST /selects/ HTTP/1.1" 201 79
+INFO 2021-06-21 11:14:56,637 basehttp 157 "GET /orders/settlement/ HTTP/1.1" 200 545
+INFO 2021-06-21 11:14:56,657 basehttp 157 "GET /address/ HTTP/1.1" 200 291
+INFO 2021-06-21 11:15:01,950 basehttp 157 "POST /orders/submit/ HTTP/1.1" 201 34
+INFO 2021-06-21 11:15:16,661 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 11:15:16,662 basehttp 157 "GET /contents/ HTTP/1.1" 200 20648
+INFO 2021-06-21 11:15:27,537 basehttp 157 "OPTIONS /skus/search/?page=1&page_size=12&text=Apple HTTP/1.1" 200 0
+INFO 2021-06-21 11:15:27,984 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 11:15:28,110 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=Apple HTTP/1.1" 200 52
+INFO 2021-06-21 11:18:29,850 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 11:18:30,620 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=Apple HTTP/1.1" 200 52
+INFO 2021-06-21 11:19:33,636 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-21 11:19:33,707 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=Apple HTTP/1.1" 200 52
+INFO 2021-06-21 11:19:35,511 basehttp 157 "OPTIONS /skus/search/?page=1&page_size=12&text= HTTP/1.1" 200 0
+INFO 2021-06-21 11:19:36,117 basehttp 157 "GET /skus/search/?page=1&page_size=12&text= HTTP/1.1" 200 622
+INFO 2021-06-21 11:19:44,217 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=Apple HTTP/1.1" 200 52
+INFO 2021-06-21 11:19:51,985 basehttp 157 "OPTIONS /skus/search/?page=1&page_size=12&text=P10 HTTP/1.1" 200 0
+INFO 2021-06-21 11:19:52,556 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=P10 HTTP/1.1" 200 622
+INFO 2021-06-21 11:22:50,451 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=Apple HTTP/1.1" 200 4431

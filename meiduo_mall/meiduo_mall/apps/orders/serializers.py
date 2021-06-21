@@ -81,20 +81,32 @@ class CommitOrderSerializer(serializers.ModelSerializer):
                 redis_con = get_redis_connection('cart')
                 # 获取缓存的待结算的全部商品
                 skus = redis_con.lrange('%d' % user.id, 0, -1)
+
+                # 修复同一sku不同规格无法购买的问题
+                origin_sku_id = 0
+                origin_count = 0
+
                 for sku in skus:
+                    # 为每个规格的sku生成一条订单详情数据
+                    sku = sku.decode()
+                    sku_id, spec = sku.split('_', 1)
                     while True:
-                        # 为每个规格的sku生成一条订单详情数据
-                        sku_id, spec = sku.decode().split('_', 1)
                         # 获取当前sku对象
-                        sku = SKU.objects.get(id=sku_id)
+                        sku_obj = SKU.objects.get(id=sku_id)
                         # 从购物车缓存中获取当前规格产品的数量
-                        count = redis_con.hget('cart_%d' % user.id, '%s_%s' % (sku_id, spec))
+                        count = int(redis_con.hget('cart_%d' % user.id, '%s_%s' % (sku_id, spec)))
+
+                        if origin_sku_id != sku_id:
+                            origin_sku_id = sku_id
+                            origin_count = count
+                        else:
+                            origin_count += count
 
                         # 判断库存是否充足
-                        origin_stock = sku.stock
-                        origin_sales = sku.sales
+                        origin_stock = sku_obj.stock
+                        origin_sales = sku_obj.sales
 
-                        if int(count) > origin_stock:
+                        if count > origin_stock:
                             # 如果库存不足，并抛出异常
                             # transaction.savepoint_rollback(save_id)
                             raise serializers.ValidationError('库存不足')
@@ -102,23 +114,29 @@ class CommitOrderSerializer(serializers.ModelSerializer):
                         # 保存商品详情信息到数据库
                         OrderGoods.objects.create(
                             order=order,
-                            sku=sku,
+                            sku=sku_obj,
                             spec=spec,
-                            count=int(count),
-                            price=sku.price
+                            count=count,
+                            price=sku_obj.price
                         )
 
                         # 根据原始库存条件更新，返回更新的条目数，乐观锁
-                        new_stock = origin_stock - int(count)
-                        new_sales = origin_sales + int(count)
-                        res = SKU.objects.filter(id=sku_id, stock=origin_stock).update(stock=new_stock, sales=new_sales)
-                        if res == 0:
+                        new_stock = origin_stock - origin_count
+                        print(new_stock)
+                        new_sales = origin_sales + origin_count
+                        res = SKU.objects.get(id=sku_id, stock=origin_stock)
+                        print(res)
+                        if res:
                             # 如果res等于0，说明该条sku已经被人修改了，就不能继续保存。但是剩余库存仍然能满足购买需要，所以这里跳出当前循环即可
+                            res.stock = new_stock
+                            res.sales = new_sales
+                            res.save()
+                        else:
                             continue
 
                         # 继续跟新SPU的销量
-                        sku.goods.sales += int(count)
-                        sku.goods.save()
+                        sku_obj.goods.sales += count
+                        sku_obj.goods.save()
 
                         # 如果全部成功，则跳出当前while循环，继续创建下一个sku的详情记录
                         break
@@ -135,8 +153,8 @@ class CommitOrderSerializer(serializers.ModelSerializer):
             # 清空购物车中已生成订单的数据
             pl = redis_con.pipeline()
             for sku in skus:
-                pl.hdel('cart_%d' % user.id, sku.decode())
-                pl.lrem('%d' % user.id, 0, sku.decode())
+                pl.hdel('cart_%d' % user.id, sku)
+                pl.lrem('%d' % user.id, 0, sku)
             pl.execute()
 
             # 最后返回创建成功的订单
