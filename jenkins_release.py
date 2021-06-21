@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # 以上两行代码在linux环境运行时一定要加上，第一行是找到python解释器进行运行py文件，第二行解决编码问题
-
+import jenkins
 from jenkins import Jenkins
 import eventlet
 import time
@@ -27,28 +27,38 @@ class JenkinsBuild:
             logging.info('链接jenkins失败，失败原因：' + str(e))
 
     def build_job(self, job_name, timeout=300):
+        try:
+            # 校验jenkins的job是否存在
+            self.jenkins_con.assert_job_exists(job_name)
+        except jenkins.JenkinsException as e:
+            logging.error('job任务不存在: {}'.format(e))
+
         # 构建任务号
         build_number = self.jenkins_con.get_job_info(job_name)['nextBuildNumber']
 
         # 启动构建
         self.jenkins_con.build_job(job_name)
 
-        is_building = True
+        logging.info(f'启动构建任务，任务号{build_number}')
 
         with eventlet.Timeout(timeout, False):
-            try:
-                while is_building:
+            is_building = True
+            while is_building:
+                try:
                     # 判断名为job_name的job是否还在构建中
                     is_building = self.jenkins_con.get_build_info(job_name, build_number).get('building')
-                    time.sleep(3000)
-                # 获取job_name的某次构建结果
-                result = self.jenkins_con.get_build_info(job_name, build_number).get('building')
+                    time.sleep(2)
 
-                logging.info('构建结果：' + result)
-                logging.info(self.jenkins_con.get_build_console_output(job_name, build_number))
-                return
-            except Exception as e:
-                logging.info('获取构建结果失败，失败原因：' + str(e))
+                    if not is_building:
+                        # 获取job_name的某次构建结果
+                        result = self.jenkins_con.get_build_info(job_name, build_number).get('result')
+                        logging.info('构建结果：' + result)
+                        logging.info(self.jenkins_con.get_build_console_output(job_name, build_number))
+                        break
+
+                except jenkins.JenkinsException as e:
+                    logging.info('{} is not start,waiting.....'.format(build_number))
+                    time.sleep(2)
 
         logging.info('{} jenkins任务，No: {} 构建超时'.format(job_name, build_number))
 

@@ -32,7 +32,7 @@ pipeline {
                 // 当前stage报错时，设置构建结果为成功，保证后续stage继续执行
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
                     echo "==================收集后端静态文件=================="
-                    sh label: "构建镜像", script: "cd meiduo_mall && python3 manage.py collectstatic --noinput"
+                    sh label: "构建镜像", script: "cd meiduo_mall && python manage.py collectstatic --noinput"
                 }
             }
         }
