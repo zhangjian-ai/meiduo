@@ -11,7 +11,7 @@
 *.sh
 
 ### webpack ###
-/node_modules
+meiduo_mall_frontend/node_modules
 
 
 
