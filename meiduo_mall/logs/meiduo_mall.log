@@ -16789,3 +16789,123 @@ INFO 2021-06-22 19:08:41,294 basehttp 157 "GET /sku_list/16/skus/ HTTP/1.1" 200 
 INFO 2021-06-22 19:08:43,586 basehttp 157 "GET /sku_list/16/skus/ HTTP/1.1" 200 2
 INFO 2021-06-22 19:10:24,902 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
 INFO 2021-06-22 19:10:25,353 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-22 23:57:44,059 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-22 23:57:46,545 basehttp 157 "GET / HTTP/1.1" 200 5259
+ERROR 2021-06-22 23:57:52,989 log 224 Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/template/defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/Library/Python/3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/Library/Python/3.8/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/rest_framework_swagger/renderers.py", line 55, in render
+    return render(
+  File "/Library/Python/3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Python/3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/3.8/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/Library/Python/3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Library/Python/3.8/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Library/Python/3.8/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Library/Python/3.8/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/Library/Python/3.8/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/3.8/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/Library/Python/3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/Library/Python/3.8/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/3.8/site-packages/django/template/defaulttags.py", line 1091, in load
+    lib = find_library(parser, name)
+  File "/Library/Python/3.8/site-packages/django/template/defaulttags.py", line 1036, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'staticfiles' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+highlight
+i18n
+l10n
+log
+more_like_this
+rest_framework
+static
+tz
+ERROR 2021-06-22 23:57:52,997 basehttp 157 "GET /docs/ HTTP/1.1" 500 184196
+INFO 2021-06-23 00:00:25,053 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-23 00:00:25,511 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 00:00:29,919 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 00:01:05,569 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-23 00:01:06,014 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 00:01:59,941 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-23 00:02:00,386 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 00:02:33,813 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-23 00:02:34,173 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 00:02:38,741 basehttp 157 "GET /docs/ HTTP/1.1" 200 14610
+INFO 2021-06-23 00:02:38,758 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.js HTTP/1.1" 200 1771
+INFO 2021-06-23 00:02:38,759 basehttp 157 "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 200 458
+INFO 2021-06-23 00:02:38,759 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.css HTTP/1.1" 200 419
+INFO 2021-06-23 00:02:38,761 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 200 153889
+INFO 2021-06-23 00:02:38,764 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 200 1636116
+INFO 2021-06-23 00:03:56,842 basehttp 157 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2021-06-23 00:10:06,565 basehttp 157 "GET /docs/ HTTP/1.1" 200 14610
+INFO 2021-06-23 00:10:06,589 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 304 0
+INFO 2021-06-23 00:10:06,589 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 304 0
+INFO 2021-06-23 00:10:06,590 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.css HTTP/1.1" 304 0
+INFO 2021-06-23 00:10:06,590 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.js HTTP/1.1" 304 0
+INFO 2021-06-23 00:10:06,590 basehttp 157 "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 304 0
+INFO 2021-06-23 00:10:19,891 basehttp 157 "GET /skus/search/ HTTP/1.1" 200 8885
+INFO 2021-06-23 00:11:02,560 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-23 00:11:03,000 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-23 00:11:08,306 log 224 Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/rest_framework_swagger/views.py", line 32, in get
+    schema = generator.get_schema(request=request)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/coreapi.py", line 156, in get_schema
+    links = self.get_links(None if public else request)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/coreapi.py", line 143, in get_links
+    link = view.schema.get_link(path, method, base_url=self.url)
+AttributeError: 'AutoSchema' object has no attribute 'get_link'
+ERROR 2021-06-23 00:11:08,311 basehttp 157 "GET /docs/ HTTP/1.1" 500 110940
+INFO 2021-06-23 00:12:41,246 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-23 00:12:41,667 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 00:12:45,629 basehttp 157 "GET /docs/ HTTP/1.1" 200 14610
+INFO 2021-06-23 00:12:45,656 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.css HTTP/1.1" 304 0
+INFO 2021-06-23 00:12:45,656 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.js HTTP/1.1" 304 0
+INFO 2021-06-23 00:12:45,656 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 304 0
+INFO 2021-06-23 00:12:45,657 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 304 0
+INFO 2021-06-23 00:12:45,658 basehttp 157 "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 304 0

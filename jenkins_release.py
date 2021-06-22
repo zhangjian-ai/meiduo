@@ -26,7 +26,7 @@ class JenkinsBuild:
         except Exception as e:
             logging.info('链接jenkins失败，失败原因：' + str(e))
 
-    def build_job(self, job_name, timeout=300):
+    def build_job(self, job_name, timeout=720):
         try:
             # 校验jenkins的job是否存在
             self.jenkins_con.assert_job_exists(job_name)
@@ -39,7 +39,7 @@ class JenkinsBuild:
         # 启动构建
         self.jenkins_con.build_job(job_name)
 
-        logging.info(f'启动构建任务，任务号{build_number}')
+        logging.info(f'启动构建任务，任务号-{build_number}')
 
         with eventlet.Timeout(timeout, False):
             is_building = True
@@ -58,7 +58,7 @@ class JenkinsBuild:
                         return
 
                 except jenkins.JenkinsException as e:
-                    logging.info('{}-{} is not start,waiting.....'.format(job_name, build_number))
+                    logging.info('{}-{} is starting, Hold on please.'.format(job_name, build_number))
                     time.sleep(5)
 
         logging.info('{} jenkins任务，No: {} 构建超时'.format(job_name, build_number))

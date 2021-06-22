@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
     'haystack',  # 对接elasticsearch搜索引擎的模块
+    'rest_framework_swagger',  # 接口swagger
 
     # 自定义用户app
     'users',
@@ -87,7 +88,11 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {  # 解决swagger静态文件没有注册的问题，这里就是注册模版
+                'staticfiles': 'django.templatetags.static',
+            },
         },
+
     },
 ]
 

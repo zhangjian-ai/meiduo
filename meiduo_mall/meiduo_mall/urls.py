@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework.documentation import include_docs_urls
+from rest_framework_swagger.views import get_swagger_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),  # 富文本编辑器
-    path('docs/', include_docs_urls('接口文档')),  # 接口文档
+    path('docs/', get_swagger_view('接口文档')),  # 接口文档
     path('', include('verifications.urls')),
     path('', include('users.urls')),
     path('oauth/', include('oauth.urls')),
