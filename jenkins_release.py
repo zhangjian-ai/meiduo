@@ -47,7 +47,7 @@ class JenkinsBuild:
                 try:
                     # 判断名为job_name的job是否还在构建中
                     is_building = self.jenkins_con.get_build_info(job_name, build_number).get('building')
-                    time.sleep(2)
+                    time.sleep(3)
 
                     if not is_building:
                         # 获取job_name的某次构建结果
@@ -58,8 +58,8 @@ class JenkinsBuild:
                         return
 
                 except jenkins.JenkinsException as e:
-                    logging.info('{} is not start,waiting.....'.format(build_number))
-                    time.sleep(2)
+                    logging.info('{}-{} is not start,waiting.....'.format(job_name, build_number))
+                    time.sleep(5)
 
         logging.info('{} jenkins任务，No: {} 构建超时'.format(job_name, build_number))
 
