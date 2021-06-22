@@ -53,6 +53,7 @@ class JenkinsBuild:
                         # 获取job_name的某次构建结果
                         result = self.jenkins_con.get_build_info(job_name, build_number).get('result')
                         logging.info('构建结果：' + result)
+                        logging.info('++++++++++++++++++++++ Jenkins Console Output++++++++++++++++++++')
                         logging.info(self.jenkins_con.get_build_console_output(job_name, build_number))
                         return
 
