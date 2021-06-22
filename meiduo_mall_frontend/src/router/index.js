@@ -165,7 +165,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history', //取出域名后面的# 
+  mode: 'hash', //取出域名后面的# 
   routes
 })
 
