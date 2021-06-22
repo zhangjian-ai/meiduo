@@ -298,8 +298,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
     ),
 
-    # 分页
+    # 分页类
     'DEFAULT_PAGINATION_CLASS': 'meiduo_mall.utils.pagination.SetPagination',
+
+    # 接口文档类
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 
 }
 

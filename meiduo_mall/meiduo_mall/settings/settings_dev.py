@@ -29,7 +29,7 @@ SECRET_KEY = 'j82ce(g6rqrs@(53u*go2mjk*-4k$j6%yl7-j)#^ihtcz@#s)^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.meiduo.site']
+ALLOWED_HOSTS = ['www.meiduo.site', '127.0.0.1']
 
 # Application definition
 
@@ -290,8 +290,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
     ),
 
-    # 分页
+    # 分页类
     'DEFAULT_PAGINATION_CLASS': 'meiduo_mall.utils.pagination.SetPagination',
+
+    # 接口文档类
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 
 }
 

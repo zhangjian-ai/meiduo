@@ -16660,3 +16660,132 @@ INFO 2021-06-21 11:19:44,217 basehttp 157 "GET /skus/search/?page=1&page_size=12
 INFO 2021-06-21 11:19:51,985 basehttp 157 "OPTIONS /skus/search/?page=1&page_size=12&text=P10 HTTP/1.1" 200 0
 INFO 2021-06-21 11:19:52,556 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=P10 HTTP/1.1" 200 622
 INFO 2021-06-21 11:22:50,451 basehttp 157 "GET /skus/search/?page=1&page_size=12&text=Apple HTTP/1.1" 200 4431
+INFO 2021-06-22 19:00:35,190 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-22 19:00:38,913 exception 88 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2021-06-22 19:00:38,971 log 224 Bad Request: /
+WARNING 2021-06-22 19:00:38,971 basehttp 157 "GET / HTTP/1.1" 400 72496
+ERROR 2021-06-22 19:00:39,128 exception 88 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2021-06-22 19:00:39,146 log 224 Bad Request: /favicon.ico
+WARNING 2021-06-22 19:00:39,146 basehttp 157 "GET /favicon.ico HTTP/1.1" 400 72421
+ERROR 2021-06-22 19:00:50,605 exception 88 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2021-06-22 19:00:50,641 log 224 Bad Request: /docs
+WARNING 2021-06-22 19:00:50,642 basehttp 157 "GET /docs HTTP/1.1" 400 72540
+ERROR 2021-06-22 19:00:50,698 exception 88 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2021-06-22 19:00:50,718 log 224 Bad Request: /favicon.ico
+WARNING 2021-06-22 19:00:50,718 basehttp 157 "GET /favicon.ico HTTP/1.1" 400 72425
+INFO 2021-06-22 19:01:58,755 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-22 19:01:59,061 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-22 19:02:03,421 basehttp 157 "GET /docs HTTP/1.1" 301 0
+ERROR 2021-06-22 19:02:03,493 log 224 Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/views.py", line 48, in handle_exception
+    return super().handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/views.py", line 37, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/coreapi.py", line 156, in get_schema
+    links = self.get_links(None if public else request)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/coreapi.py", line 143, in get_links
+    link = view.schema.get_link(path, method, base_url=self.url)
+AttributeError: 'AutoSchema' object has no attribute 'get_link'
+ERROR 2021-06-22 19:02:03,497 basehttp 157 "GET /docs/ HTTP/1.1" 500 112897
+WARNING 2021-06-22 19:02:03,542 log 224 Not Found: /favicon.ico
+WARNING 2021-06-22 19:02:03,542 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 8122
+INFO 2021-06-22 19:02:15,431 basehttp 157 "GET / HTTP/1.1" 200 5259
+INFO 2021-06-22 19:02:15,455 basehttp 157 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2021-06-22 19:02:15,455 basehttp 157 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2021-06-22 19:02:15,456 basehttp 157 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2021-06-22 19:02:15,456 basehttp 157 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2021-06-22 19:02:15,461 basehttp 157 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2021-06-22 19:02:15,462 basehttp 157 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2021-06-22 19:02:15,463 basehttp 157 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2021-06-22 19:02:15,463 basehttp 157 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2021-06-22 19:02:15,463 basehttp 157 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2021-06-22 19:02:15,464 basehttp 157 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2021-06-22 19:02:15,482 basehttp 157 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+ERROR 2021-06-22 19:02:42,096 log 224 Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/views.py", line 48, in handle_exception
+    return super().handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/views.py", line 37, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/coreapi.py", line 156, in get_schema
+    links = self.get_links(None if public else request)
+  File "/Library/Python/3.8/site-packages/rest_framework/schemas/coreapi.py", line 143, in get_links
+    link = view.schema.get_link(path, method, base_url=self.url)
+AttributeError: 'AutoSchema' object has no attribute 'get_link'
+ERROR 2021-06-22 19:02:42,097 basehttp 157 "GET /docs/ HTTP/1.1" 500 113491
+INFO 2021-06-22 19:04:24,202 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-22 19:04:24,633 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-22 19:04:33,667 basehttp 157 "GET /docs/ HTTP/1.1" 200 192888
+INFO 2021-06-22 19:04:33,693 basehttp 157 "GET /static/rest_framework/docs/css/base.css HTTP/1.1" 200 6147
+INFO 2021-06-22 19:04:33,694 basehttp 157 "GET /static/rest_framework/docs/css/jquery.json-view.min.css HTTP/1.1" 200 1307
+INFO 2021-06-22 19:04:33,695 basehttp 157 "GET /docs/schema.js HTTP/1.1" 200 15844
+INFO 2021-06-22 19:04:33,695 basehttp 157 "GET /static/rest_framework/css/font-awesome-4.0.3.css HTTP/1.1" 200 21658
+INFO 2021-06-22 19:04:33,696 basehttp 157 "GET /static/rest_framework/docs/js/jquery.json-view.min.js HTTP/1.1" 200 2700
+INFO 2021-06-22 19:04:33,696 basehttp 157 "GET /static/rest_framework/css/bootstrap-theme.min.css HTTP/1.1" 200 23411
+INFO 2021-06-22 19:04:33,696 basehttp 157 "GET /static/rest_framework/docs/js/api.js HTTP/1.1" 200 10539
+INFO 2021-06-22 19:04:33,697 basehttp 157 "GET /static/rest_framework/js/coreapi-0.1.1.js HTTP/1.1" 200 157600
+INFO 2021-06-22 19:04:33,764 basehttp 157 "GET /static/rest_framework/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2021-06-22 19:04:33,774 basehttp 157 "GET /static/rest_framework/docs/img/favicon.ico HTTP/1.1" 200 5430
+INFO 2021-06-22 19:05:11,122 basehttp 157 "GET /areas/?page=1&page_size=10 HTTP/1.1" 200 440
+ERROR 2021-06-22 19:06:54,495 log 224 Internal Server Error: /order/verify/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/payment/views.py", line 61, in put
+    signature = data.pop('sign')
+KeyError: 'sign'
+ERROR 2021-06-22 19:06:54,499 basehttp 157 "PUT /order/verify/ HTTP/1.1" 500 94269
+WARNING 2021-06-22 19:07:57,023 log 224 Unauthorized: /set_history/
+WARNING 2021-06-22 19:07:57,024 basehttp 157 "GET /set_history/ HTTP/1.1" 401 43
+INFO 2021-06-22 19:08:36,153 basehttp 157 "GET /sku_list/1/skus/ HTTP/1.1" 200 2
+INFO 2021-06-22 19:08:41,294 basehttp 157 "GET /sku_list/16/skus/ HTTP/1.1" 200 2
+INFO 2021-06-22 19:08:43,586 basehttp 157 "GET /sku_list/16/skus/ HTTP/1.1" 200 2
+INFO 2021-06-22 19:10:24,902 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-22 19:10:25,353 autoreload 617 Watching for file changes with StatReloader
