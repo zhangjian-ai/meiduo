@@ -8,8 +8,10 @@
 *.iml
 *.ipr
 
-### webpack ###
-meiduo_mall_fronted/node_modules/
+*.sh
 
-*.log
+### webpack ###
+.node_modules/
+
+
 
