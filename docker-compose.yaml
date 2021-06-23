@@ -81,40 +81,40 @@ services:
 #      - "9200:9200"
 #
 #
-  tracker:
-    # tracker默认端口22122，不用专门映射
-    image: delron/fastdfs
-    container_name: md_FastDFS-tracker
-    restart: always
-    volumes:
-      - /var/local/meiduo_mall/fdfs/tracker:/var/fdfs
-    logging:
-      driver: json-file
-      options:
-        max-size: "30m"
-        max-file: "2"
-    network_mode: "host"
-    command: tracker
-
-
-  storage:
-    # storage默认端口8888
-    image: delron/fastdfs
-    container_name: md_FastDFS-storage
-    restart: always
-    volumes:
-      - /var/local/meiduo_mall/fdfs/storage:/var/fdfs
-    logging:
-      driver: json-file
-      options:
-        max-size: "250m"
-        max-file: "5"
-    network_mode: "host"
-    command: storage
-    environment:
-      - TRACKER_SERVER=121.4.47.229:22122
-    depends_on:
-      - tracker
+#  tracker:
+#    # tracker默认端口22122，不用专门映射
+#    image: delron/fastdfs
+#    container_name: md_FastDFS-tracker
+#    restart: always
+#    volumes:
+#      - /var/local/meiduo_mall/fdfs/tracker:/var/fdfs
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: "30m"
+#        max-file: "2"
+#    network_mode: "host"
+#    command: tracker
+#
+#
+#  storage:
+#    # storage默认端口8888
+#    image: delron/fastdfs
+#    container_name: md_FastDFS-storage
+#    restart: always
+#    volumes:
+#      - /var/local/meiduo_mall/fdfs/storage:/var/fdfs
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: "250m"
+#        max-file: "5"
+#    network_mode: "host"
+#    command: storage
+#    environment:
+#      - TRACKER_SERVER=121.4.47.229:22122
+#    depends_on:
+#      - tracker
 #
 #
 ##--------------主从数据库已单独部署完成---------------
