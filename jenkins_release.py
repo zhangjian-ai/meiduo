@@ -55,6 +55,7 @@ class JenkinsBuild:
                         logging.info('构建结果：' + result)
                         logging.info('++++++++++++++++++++++ Jenkins Console Output++++++++++++++++++++')
                         logging.info(self.jenkins_con.get_build_console_output(job_name, build_number))
+                        self.jenkins_con.quiet_down()  # 释放链接
                         return
 
                 except jenkins.JenkinsException as e:
