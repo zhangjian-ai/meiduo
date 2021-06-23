@@ -16909,3 +16909,12 @@ INFO 2021-06-23 00:12:45,656 basehttp 157 "GET /static/rest_framework_swagger/bu
 INFO 2021-06-23 00:12:45,656 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 304 0
 INFO 2021-06-23 00:12:45,657 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 304 0
 INFO 2021-06-23 00:12:45,658 basehttp 157 "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 304 0
+INFO 2021-06-23 01:03:33,429 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 01:03:36,149 basehttp 157 "GET / HTTP/1.1" 200 5259
+INFO 2021-06-23 01:03:43,165 basehttp 157 "GET /docs/ HTTP/1.1" 200 14610
+INFO 2021-06-23 01:03:43,191 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 304 0
+INFO 2021-06-23 01:03:43,192 basehttp 157 "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 304 0
+INFO 2021-06-23 01:03:43,192 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.js HTTP/1.1" 304 0
+INFO 2021-06-23 01:03:43,192 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.css HTTP/1.1" 304 0
+INFO 2021-06-23 01:03:43,194 basehttp 157 "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 304 0
+INFO 2021-06-23 01:03:57,969 basehttp 157 "GET /areas/ HTTP/1.1" 200 1204
