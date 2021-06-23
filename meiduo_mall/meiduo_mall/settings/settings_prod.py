@@ -290,6 +290,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "/static/"),
 ]
 
+
 # rest_framework 相关配置
 REST_FRAMEWORK = {
     # 指定异常处理方法，在默认的异常处理方法上，新增了两种异常异常的处理

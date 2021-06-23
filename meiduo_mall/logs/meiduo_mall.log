@@ -16918,3 +16918,650 @@ INFO 2021-06-23 01:03:43,192 basehttp 157 "GET /static/rest_framework_swagger/bu
 INFO 2021-06-23 01:03:43,192 basehttp 157 "GET /static/rest_framework_swagger/bundles/app.bundle.css HTTP/1.1" 304 0
 INFO 2021-06-23 01:03:43,194 basehttp 157 "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 304 0
 INFO 2021-06-23 01:03:57,969 basehttp 157 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2021-06-23 10:12:14,836 basehttp 157 "GET / HTTP/1.1" 200 5259
+INFO 2021-06-23 10:12:19,873 basehttp 157 "GET /admin HTTP/1.1" 301 0
+INFO 2021-06-23 10:12:19,905 basehttp 157 "GET /admin/ HTTP/1.1" 302 0
+INFO 2021-06-23 10:12:19,946 basehttp 157 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2196
+INFO 2021-06-23 10:12:19,964 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-06-23 10:12:19,965 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-06-23 10:12:19,965 basehttp 157 "GET /static/admin/css/login.css HTTP/1.1" 200 1185
+INFO 2021-06-23 10:12:19,966 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-06-23 10:12:19,966 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-06-23 10:12:19,966 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-06-23 10:12:19,997 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-06-23 10:12:19,997 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-06-23 10:12:22,736 basehttp 157 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2021-06-23 10:12:23,163 basehttp 157 "GET /admin/ HTTP/1.1" 200 9148
+INFO 2021-06-23 10:12:23,192 basehttp 157 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2021-06-23 10:12:23,197 basehttp 157 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-06-23 10:12:23,197 basehttp 157 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-06-23 10:12:23,223 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-06-23 10:12:26,144 basehttp 157 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 11487
+INFO 2021-06-23 10:12:26,164 basehttp 157 "GET /static/admin/css/forms.css HTTP/1.1" 200 8423
+INFO 2021-06-23 10:12:26,164 basehttp 157 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2021-06-23 10:12:26,165 basehttp 157 "GET /static/admin/js/core.js HTTP/1.1" 200 5418
+INFO 2021-06-23 10:12:26,166 basehttp 157 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+INFO 2021-06-23 10:12:26,167 basehttp 157 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8632
+INFO 2021-06-23 10:12:26,167 basehttp 157 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2021-06-23 10:12:26,168 basehttp 157 "GET /static/admin/js/actions.js HTTP/1.1" 200 6783
+INFO 2021-06-23 10:12:26,168 basehttp 157 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10592
+INFO 2021-06-23 10:12:26,171 basehttp 157 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-06-23 10:12:26,171 basehttp 157 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2021-06-23 10:12:26,176 basehttp 157 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2021-06-23 10:12:26,177 basehttp 157 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2021-06-23 10:12:26,515 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+ERROR 2021-06-23 10:12:36,439 log 224 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:12:36,456 basehttp 157 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 200555
+WARNING 2021-06-23 10:14:24,478 log 224 Not Acceptable: /docs/
+WARNING 2021-06-23 10:14:24,478 basehttp 157 "GET /docs/ HTTP/1.1" 406 51
+INFO 2021-06-23 10:16:50,463 basehttp 157 "GET /goods_channel/ HTTP/1.1" 200 18474
+INFO 2021-06-23 10:27:24,255 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
+INFO 2021-06-23 10:27:24,720 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 10:29:23,096 basehttp 157 "GET / HTTP/1.1" 200 5293
+INFO 2021-06-23 10:29:28,754 basehttp 157 "GET /admin/ HTTP/1.1" 200 9148
+INFO 2021-06-23 10:29:33,116 basehttp 157 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 11487
+INFO 2021-06-23 10:29:33,516 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+ERROR 2021-06-23 10:29:51,520 log 224 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:29:51,536 basehttp 157 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 200639
+ERROR 2021-06-23 10:40:40,257 log 224 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:40:40,259 basehttp 157 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 200639
+INFO 2021-06-23 10:46:03,525 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-06-23 10:46:03,997 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 10:46:40,362 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-06-23 10:46:40,702 autoreload 617 Watching for file changes with StatReloader
+ERROR 2021-06-23 10:46:50,242 log 224 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:46:50,257 basehttp 157 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 200639
+ERROR 2021-06-23 10:46:59,493 log 224 Internal Server Error: /admin/goods/skuimage/add/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1653, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1580, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/3.8/site-packages/django/contrib/admin/options.py", line 1093, in save_model
+    obj.save()
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 895, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/Library/Python/3.8/site-packages/django/db/models/base.py", line 933, in _do_insert
+    return manager._insert(
+  File "/Library/Python/3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1396, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1339, in as_sql
+    value_rows = [
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1340, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Library/Python/3.8/site-packages/django/db/models/sql/compiler.py", line 1291, in pre_save_val
+    return field.pre_save(obj, add=True)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 307, in pre_save
+    file.save(file.name, file.file, save=False)
+  File "/Library/Python/3.8/site-packages/django/db/models/fields/files.py", line 87, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:46:59,494 basehttp 157 "POST /admin/goods/skuimage/add/ HTTP/1.1" 500 200639
+INFO 2021-06-23 10:48:14,572 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/urls.py changed, reloading.
+INFO 2021-06-23 10:48:14,990 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 10:48:45,766 basehttp 157 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 11487
+INFO 2021-06-23 10:48:45,810 basehttp 157 "GET /admin/ HTTP/1.1" 200 9148
+INFO 2021-06-23 10:48:48,617 basehttp 157 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 11487
+INFO 2021-06-23 10:48:48,997 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+WARNING 2021-06-23 10:50:29,424 log 224 Not Found: /ckditor
+WARNING 2021-06-23 10:50:29,425 basehttp 157 "GET /ckditor HTTP/1.1" 404 8110
+WARNING 2021-06-23 10:50:46,659 log 224 Not Found: /ckeditor
+WARNING 2021-06-23 10:50:46,659 basehttp 157 "GET /ckeditor HTTP/1.1" 404 8113
+WARNING 2021-06-23 10:50:49,494 log 224 Not Found: /ckeditor
+WARNING 2021-06-23 10:50:49,495 basehttp 157 "GET /ckeditor HTTP/1.1" 404 8113
+WARNING 2021-06-23 10:50:50,165 log 224 Not Found: /ckeditor
+WARNING 2021-06-23 10:50:50,165 basehttp 157 "GET /ckeditor HTTP/1.1" 404 8113
+WARNING 2021-06-23 10:50:50,371 log 224 Not Found: /ckeditor
+WARNING 2021-06-23 10:50:50,372 basehttp 157 "GET /ckeditor HTTP/1.1" 404 8113
+WARNING 2021-06-23 10:51:53,092 log 224 Not Found: /ckeditor/
+WARNING 2021-06-23 10:51:53,093 basehttp 157 "GET /ckeditor/ HTTP/1.1" 404 8383
+INFO 2021-06-23 10:52:13,865 basehttp 157 "GET /ckeditor/upload HTTP/1.1" 301 0
+WARNING 2021-06-23 10:52:17,638 base 101 Method Not Allowed (GET): /ckeditor/upload/
+WARNING 2021-06-23 10:52:17,639 log 224 Method Not Allowed: /ckeditor/upload/
+WARNING 2021-06-23 10:52:17,640 basehttp 157 "GET /ckeditor/upload/ HTTP/1.1" 405 0
+WARNING 2021-06-23 10:52:21,323 base 101 Method Not Allowed (GET): /ckeditor/upload/
+WARNING 2021-06-23 10:52:21,324 log 224 Method Not Allowed: /ckeditor/upload/
+WARNING 2021-06-23 10:52:21,324 basehttp 157 "GET /ckeditor/upload/ HTTP/1.1" 405 0
+WARNING 2021-06-23 10:52:33,224 base 101 Method Not Allowed (GET): /ckeditor/upload/
+WARNING 2021-06-23 10:52:33,226 log 224 Method Not Allowed: /ckeditor/upload/
+WARNING 2021-06-23 10:52:33,226 basehttp 157 "GET /ckeditor/upload/ HTTP/1.1" 405 0
+WARNING 2021-06-23 10:52:38,731 log 224 Not Found: /ckeditor/
+WARNING 2021-06-23 10:52:38,732 basehttp 157 "GET /ckeditor/ HTTP/1.1" 404 8383
+WARNING 2021-06-23 10:52:54,241 log 224 Not Found: /ckeditor_upload
+WARNING 2021-06-23 10:52:54,242 basehttp 157 "GET /ckeditor_upload HTTP/1.1" 404 8134
+INFO 2021-06-23 10:53:18,035 basehttp 157 "GET /admin HTTP/1.1" 301 0
+INFO 2021-06-23 10:53:18,901 basehttp 157 "GET /admin/ HTTP/1.1" 200 9148
+INFO 2021-06-23 10:53:18,942 basehttp 157 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2021-06-23 10:53:18,944 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-06-23 10:53:18,944 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-06-23 10:53:18,945 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-06-23 10:53:18,945 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-06-23 10:53:18,950 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-06-23 10:53:18,963 basehttp 157 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-06-23 10:53:18,964 basehttp 157 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-06-23 10:53:18,966 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-06-23 10:53:18,967 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-06-23 10:53:18,968 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-06-23 10:53:39,303 basehttp 157 "GET /admin/goods/goods/add/ HTTP/1.1" 200 88821
+INFO 2021-06-23 10:53:39,322 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-06-23 10:53:39,322 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-06-23 10:53:39,323 basehttp 157 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2021-06-23 10:53:39,323 basehttp 157 "GET /static/admin/css/forms.css HTTP/1.1" 200 8423
+INFO 2021-06-23 10:53:39,326 basehttp 157 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 1498
+INFO 2021-06-23 10:53:39,326 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-06-23 10:53:39,329 basehttp 157 "GET /static/admin/js/core.js HTTP/1.1" 200 5418
+INFO 2021-06-23 10:53:39,330 basehttp 157 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10592
+INFO 2021-06-23 10:53:39,330 basehttp 157 "GET /static/admin/js/actions.js HTTP/1.1" 200 6783
+INFO 2021-06-23 10:53:39,333 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-06-23 10:53:39,333 basehttp 157 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+INFO 2021-06-23 10:53:39,335 basehttp 157 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2021-06-23 10:53:39,337 basehttp 157 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8632
+INFO 2021-06-23 10:53:39,339 basehttp 157 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-06-23 10:53:39,341 basehttp 157 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2021-06-23 10:53:39,343 basehttp 157 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 746737
+INFO 2021-06-23 10:53:39,353 basehttp 157 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2021-06-23 10:53:39,355 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-06-23 10:53:39,357 basehttp 157 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-06-23 10:53:39,364 basehttp 157 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-06-23 10:53:39,367 basehttp 157 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2021-06-23 10:53:39,369 basehttp 157 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2021-06-23 10:53:41,763 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-06-23 10:53:41,815 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-06-23 10:53:41,835 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-06-23 10:53:41,836 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-06-23 10:53:41,856 basehttp 157 "GET /static/ckeditor/ckeditor/config.js?t=L4KA HTTP/1.1" 200 338
+INFO 2021-06-23 10:53:41,873 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=L4KA HTTP/1.1" 200 48483
+INFO 2021-06-23 10:53:41,874 basehttp 157 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=L4KA HTTP/1.1" 200 18052
+INFO 2021-06-23 10:53:41,900 basehttp 157 "GET /static/ckeditor/ckeditor/styles.js?t=L4KA HTTP/1.1" 200 5579
+INFO 2021-06-23 10:53:41,911 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 200 249
+INFO 2021-06-23 10:53:41,912 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=L4KA HTTP/1.1" 200 419
+INFO 2021-06-23 10:53:41,912 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=L4KA HTTP/1.1" 200 381
+INFO 2021-06-23 10:53:41,913 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2021-06-23 10:53:41,913 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-06-23 10:53:41,925 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons_hidpi.png?t=cae20318d4 HTTP/1.1" 200 39180
+INFO 2021-06-23 10:53:41,939 basehttp 157 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 200 3094
+INFO 2021-06-23 10:53:47,153 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css?t=L4KA HTTP/1.1" 200 13708
+INFO 2021-06-23 10:53:47,154 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/image/dialogs/image.js?t=L4KA HTTP/1.1" 200 21531
+INFO 2021-06-23 10:53:47,183 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/close.png HTTP/1.1" 200 1238
+INFO 2021-06-23 10:53:47,184 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/refresh.png HTTP/1.1" 200 1623
+INFO 2021-06-23 10:53:47,184 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/lock.png HTTP/1.1" 200 1062
+ERROR 2021-06-23 10:53:59,743 log 224 Internal Server Error: /ckeditor/upload/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/ckeditor_uploader/views.py", line 116, in post
+    saved_path = filewrapper.save_as(filepath)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/ckeditor_uploader/backends/dummy_backend.py", line 12, in save_as
+    return self.storage_engine.save(filepath, self.file_object)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:53:59,757 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 500 115022
+ERROR 2021-06-23 10:54:04,317 log 224 Internal Server Error: /ckeditor/upload/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/ckeditor_uploader/views.py", line 116, in post
+    saved_path = filewrapper.save_as(filepath)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/ckeditor_uploader/backends/dummy_backend.py", line 12, in save_as
+    return self.storage_engine.save(filepath, self.file_object)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:54:04,318 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 500 115022
+ERROR 2021-06-23 10:54:16,388 log 224 Internal Server Error: /ckeditor/upload/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/ckeditor_uploader/views.py", line 116, in post
+    saved_path = filewrapper.save_as(filepath)
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/ckeditor_uploader/backends/dummy_backend.py", line 12, in save_as
+    return self.storage_engine.save(filepath, self.file_object)
+  File "/Library/Python/3.8/site-packages/django/core/files/storage.py", line 52, in save
+    return self._save(name, content)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/utils/fastdfs/FastDFSStorage.py", line 40, in _save
+    ret = client.upload_by_buffer(content.read())
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/client.py", line 123, in upload_by_buffer
+    store_serv = tc.tracker_query_storage_stor_without_group()
+  File "/Users/zhangjian/Library/Python/3.8/lib/python/site-packages/fdfs_client/tracker_client.py", line 372, in tracker_query_storage_stor_without_group
+    raise DataError('[-] Error: %d, %s' % (th.status, os.strerror(th.status)))
+fdfs_client.exceptions.DataError: [-] Error: 2, No such file or directory
+ERROR 2021-06-23 10:54:16,389 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 500 115287
+INFO 2021-06-23 11:20:12,904 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 302 0
+INFO 2021-06-23 11:20:12,925 basehttp 157 "GET /admin/login/?next=/ckeditor/upload/ HTTP/1.1" 200 2216
+INFO 2021-06-23 11:22:28,448 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 302 0
+INFO 2021-06-23 11:22:28,469 basehttp 157 "GET /admin/login/?next=/ckeditor/upload/ HTTP/1.1" 200 2216
+INFO 2021-06-23 11:22:42,943 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 302 0
+INFO 2021-06-23 11:22:42,960 basehttp 157 "GET /admin/login/?next=/ckeditor/upload/ HTTP/1.1" 200 2216
+INFO 2021-06-23 11:23:45,365 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 12:49:51,477 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/forms/dialogs/form.js?t=L4KA HTTP/1.1" 200 2129
+INFO 2021-06-23 12:50:04,593 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 302 0
+INFO 2021-06-23 12:50:04,642 basehttp 157 "GET /admin/login/?next=/ckeditor/upload/ HTTP/1.1" 200 2216
+INFO 2021-06-23 12:50:08,260 basehttp 157 "GET /admin/goods/goods/add/ HTTP/1.1" 302 0
+INFO 2021-06-23 12:50:08,285 basehttp 157 "GET /admin/login/?next=/admin/goods/goods/add/ HTTP/1.1" 200 2228
+INFO 2021-06-23 12:50:08,322 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-06-23 12:50:08,322 basehttp 157 "GET /static/admin/css/login.css HTTP/1.1" 200 1185
+INFO 2021-06-23 12:50:08,323 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-06-23 12:50:08,323 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-06-23 12:50:08,323 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-06-23 12:50:08,330 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-06-23 12:50:08,337 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-06-23 12:50:08,337 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-06-23 12:50:12,635 basehttp 157 "POST /admin/login/?next=/admin/goods/goods/add/ HTTP/1.1" 302 0
+INFO 2021-06-23 12:50:15,491 basehttp 157 "GET /admin/goods/goods/add/ HTTP/1.1" 200 88821
+INFO 2021-06-23 12:50:15,509 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-06-23 12:50:15,510 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-06-23 12:50:15,520 basehttp 157 "GET /static/admin/css/forms.css HTTP/1.1" 200 8423
+INFO 2021-06-23 12:50:15,522 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-06-23 12:50:15,523 basehttp 157 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2021-06-23 12:50:15,524 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-06-23 12:50:15,525 basehttp 157 "GET /static/admin/js/core.js HTTP/1.1" 200 5418
+INFO 2021-06-23 12:50:15,526 basehttp 157 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 1498
+INFO 2021-06-23 12:50:15,528 basehttp 157 "GET /static/admin/js/actions.js HTTP/1.1" 200 6783
+INFO 2021-06-23 12:50:15,528 basehttp 157 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10592
+INFO 2021-06-23 12:50:15,529 basehttp 157 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+INFO 2021-06-23 12:50:15,529 basehttp 157 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-06-23 12:50:15,531 basehttp 157 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8632
+INFO 2021-06-23 12:50:15,533 basehttp 157 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2021-06-23 12:50:15,535 basehttp 157 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 746737
+INFO 2021-06-23 12:50:15,535 basehttp 157 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2021-06-23 12:50:15,552 basehttp 157 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2021-06-23 12:50:15,554 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-06-23 12:50:15,556 basehttp 157 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-06-23 12:50:15,559 basehttp 157 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-06-23 12:50:15,562 basehttp 157 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2021-06-23 12:50:15,564 basehttp 157 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2021-06-23 12:50:18,315 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-06-23 12:50:18,378 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-06-23 12:50:18,382 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-06-23 12:50:18,383 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-06-23 12:50:18,410 basehttp 157 "GET /static/ckeditor/ckeditor/config.js?t=L4KA HTTP/1.1" 200 338
+INFO 2021-06-23 12:50:18,432 basehttp 157 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=L4KA HTTP/1.1" 200 18052
+INFO 2021-06-23 12:50:18,432 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=L4KA HTTP/1.1" 200 48483
+INFO 2021-06-23 12:50:18,443 basehttp 157 "GET /static/ckeditor/ckeditor/styles.js?t=L4KA HTTP/1.1" 200 5579
+INFO 2021-06-23 12:50:18,453 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=L4KA HTTP/1.1" 200 381
+INFO 2021-06-23 12:50:18,456 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=L4KA HTTP/1.1" 200 419
+INFO 2021-06-23 12:50:18,457 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 200 249
+INFO 2021-06-23 12:50:18,457 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2021-06-23 12:50:18,457 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-06-23 12:50:18,473 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons_hidpi.png?t=cae20318d4 HTTP/1.1" 200 39180
+INFO 2021-06-23 12:50:18,495 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2021-06-23 12:50:18,495 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-06-23 12:50:18,495 basehttp 157 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 200 3094
+INFO 2021-06-23 12:50:18,522 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-06-23 12:50:18,523 basehttp 157 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 200 3094
+INFO 2021-06-23 12:50:18,523 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2021-06-23 12:50:18,538 basehttp 157 "GET /static/ckeditor/ckeditor/contents.css?t=L4KA HTTP/1.1" 200 3094
+INFO 2021-06-23 12:50:18,539 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2021-06-23 12:50:18,540 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2021-06-23 12:51:17,754 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css?t=L4KA HTTP/1.1" 200 13708
+INFO 2021-06-23 12:51:17,755 basehttp 157 "GET /static/ckeditor/ckeditor/plugins/image/dialogs/image.js?t=L4KA HTTP/1.1" 200 21531
+INFO 2021-06-23 12:51:17,783 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/close.png HTTP/1.1" 200 1238
+INFO 2021-06-23 12:51:17,784 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/refresh.png HTTP/1.1" 200 1623
+INFO 2021-06-23 12:51:17,785 basehttp 157 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/lock.png HTTP/1.1" 200 1062
+INFO 2021-06-23 12:51:25,305 basehttp 157 "POST /ckeditor/upload/ HTTP/1.1" 200 154
+INFO 2021-06-23 12:51:37,302 basehttp 157 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 11487
+INFO 2021-06-23 12:51:37,350 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-06-23 12:51:37,350 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-06-23 12:51:37,353 basehttp 157 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2021-06-23 12:51:37,355 basehttp 157 "GET /static/admin/css/forms.css HTTP/1.1" 200 8423
+INFO 2021-06-23 12:51:37,357 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-06-23 12:51:37,358 basehttp 157 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+INFO 2021-06-23 12:51:37,360 basehttp 157 "GET /static/admin/js/core.js HTTP/1.1" 200 5418
+INFO 2021-06-23 12:51:37,361 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-06-23 12:51:37,361 basehttp 157 "GET /static/admin/js/actions.js HTTP/1.1" 200 6783
+INFO 2021-06-23 12:51:37,365 basehttp 157 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10592
+INFO 2021-06-23 12:51:37,366 basehttp 157 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2021-06-23 12:51:37,367 basehttp 157 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8632
+INFO 2021-06-23 12:51:37,367 basehttp 157 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-06-23 12:51:37,368 basehttp 157 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2021-06-23 12:51:37,372 basehttp 157 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2021-06-23 12:51:37,373 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-06-23 12:51:37,375 basehttp 157 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2021-06-23 12:51:37,377 basehttp 157 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-06-23 12:51:37,380 basehttp 157 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2021-06-23 12:51:38,098 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-06-23 12:51:38,141 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-06-23 12:51:38,141 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-06-23 12:51:38,142 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-06-23 12:51:47,177 basehttp 157 "POST /admin/goods/skuimage/add/ HTTP/1.1" 302 0
+INFO 2021-06-23 12:51:53,362 basehttp 157 "GET /admin/goods/skuimage/ HTTP/1.1" 200 20484
+INFO 2021-06-23 12:51:53,389 basehttp 157 "GET /static/admin/css/base.css HTTP/1.1" 200 16307
+INFO 2021-06-23 12:51:53,390 basehttp 157 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2138
+INFO 2021-06-23 12:51:53,394 basehttp 157 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2021-06-23 12:51:53,395 basehttp 157 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6302
+INFO 2021-06-23 12:51:53,396 basehttp 157 "GET /static/admin/js/core.js HTTP/1.1" 200 5418
+INFO 2021-06-23 12:51:53,400 basehttp 157 "GET /static/admin/js/actions.js HTTP/1.1" 200 6783
+INFO 2021-06-23 12:51:53,401 basehttp 157 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6078
+INFO 2021-06-23 12:51:53,401 basehttp 157 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18344
+INFO 2021-06-23 12:51:53,401 basehttp 157 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-06-23 12:51:53,405 basehttp 157 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2021-06-23 12:51:53,407 basehttp 157 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2021-06-23 12:51:53,408 basehttp 157 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8632
+INFO 2021-06-23 12:51:53,409 basehttp 157 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2021-06-23 12:51:53,411 basehttp 157 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2021-06-23 12:51:54,346 basehttp 157 "GET /admin/jsi18n/ HTTP/1.1" 200 7732
+INFO 2021-06-23 12:51:54,389 basehttp 157 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2021-06-23 12:51:54,389 basehttp 157 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2021-06-23 12:51:54,391 basehttp 157 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2021-06-23 12:51:54,392 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-06-23 12:51:54,392 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-06-23 12:51:54,392 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
