@@ -17565,3 +17565,5 @@ INFO 2021-06-23 12:51:54,391 basehttp 157 "GET /static/admin/img/icon-yes.svg HT
 INFO 2021-06-23 12:51:54,392 basehttp 157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
 INFO 2021-06-23 12:51:54,392 basehttp 157 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
 INFO 2021-06-23 12:51:54,392 basehttp 157 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-06-23 13:10:15,973 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-06-23 13:10:19,059 basehttp 157 "GET / HTTP/1.1" 200 5293
