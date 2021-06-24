@@ -342,7 +342,7 @@ EMAIL_PORT = 465
 # 发送邮件的邮箱
 EMAIL_HOST_USER = 'zj19180525254@163.com'
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'EYBIOBDHLGLZHGZV'
+EMAIL_HOST_PASSWORD = ''
 # 收件人看到的发件人
 EMAIL_FROM = '张老师<zj19180525254@163.com>'
 # 这里未配置为True也会触发异常
