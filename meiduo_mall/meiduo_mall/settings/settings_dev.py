@@ -385,16 +385,3 @@ HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 # 配置读写分离
 DATABASE_ROUTERS = ['meiduo_mall.utils.db_router.MasterSlaveDBRouter']
-
-
-SWAGGER_SETTINGS = {
-    'SECURITY_DEFINITIONS': {
-        # 'api_key': {
-        #     'type': 'apiKey',
-        #     'in': 'header',
-        #     'name': 'Authorization'
-        # }
-    },
-    'USE_SESSION_AUTH': True,
-    'JSON_EDITOR': False,
-}
