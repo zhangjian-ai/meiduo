@@ -154,10 +154,11 @@ class UserAddressSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Address
-        exclude = ['user', 'is_deleted', 'update_time', 'create_time']
+        exclude = ['user', 'is_deleted', 'is_default', 'update_time', 'create_time']
 
     def validate(self, attrs):
         mobile = attrs.get('mobile')
+        print(attrs)
         if not re.match(r'^1[3-9]\d{9}$', mobile):
             raise serializers.ValidationError('手机号错误')
         return attrs

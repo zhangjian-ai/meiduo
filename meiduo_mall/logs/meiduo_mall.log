@@ -17747,3 +17747,44 @@ Traceback (most recent call last):
     raise RuntimeError(
 RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/address/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
 ERROR 2021-07-03 14:17:06,087 basehttp 157 "PUT /address HTTP/1.1" 500 72986
+INFO 2021-07-03 15:00:14,995 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:00:28,832 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:00:30,725 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:01:19,089 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:01:20,368 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:01:54,800 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:01:55,242 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:02:01,818 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:02:04,090 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:02:51,418 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:02:51,785 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:02:57,361 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:02:57,732 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:03:06,094 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:03:06,447 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:03:10,387 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:03:11,591 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:03:51,175 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:03:51,505 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:03:55,313 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:03:56,489 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:04:15,638 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:04:16,357 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:04:30,161 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:04:31,316 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:04:55,055 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:04:55,467 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:04:58,903 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:05:00,075 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:06:31,898 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:06:32,331 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:06:34,870 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/serializers.py changed, reloading.
+INFO 2021-07-03 15:06:35,146 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:06:38,490 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:06:39,680 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:08:09,452 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/serializers.py changed, reloading.
+INFO 2021-07-03 15:08:09,867 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:08:13,260 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:08:14,471 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:09:46,400 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:09:47,598 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
