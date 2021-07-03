@@ -17717,3 +17717,33 @@ WARNING 2021-06-23 20:24:24,652 log 224 Bad Request: /address/
 WARNING 2021-06-23 20:24:24,654 basehttp 157 "GET /address/ HTTP/1.1" 400 34
 INFO 2021-06-23 20:31:15,470 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/urls.py changed, reloading.
 INFO 2021-06-23 20:31:15,909 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 14:10:00,084 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 14:10:29,302 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+ERROR 2021-07-03 14:10:30,405 log 224 Internal Server Error: /address
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/utils/deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "/Library/Python/3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Library/Python/3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/address/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-07-03 14:10:30,407 basehttp 157 "PUT /address HTTP/1.1" 500 72986
+INFO 2021-07-03 14:15:50,504 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 14:15:51,561 log 224 Unsupported Media Type: /address/
+WARNING 2021-07-03 14:15:51,561 basehttp 157 "PUT /address/ HTTP/1.1" 415 86
+INFO 2021-07-03 14:17:05,599 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+ERROR 2021-07-03 14:17:06,086 log 224 Internal Server Error: /address
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/utils/deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "/Library/Python/3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Library/Python/3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/address/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-07-03 14:17:06,087 basehttp 157 "PUT /address HTTP/1.1" 500 72986
