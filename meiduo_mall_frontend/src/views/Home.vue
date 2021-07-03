@@ -216,6 +216,7 @@ export default {
     this.get_contents();
   },
   methods: {
+    
     // 获取页面广告内容
     get_contents() {
       let that = this;
