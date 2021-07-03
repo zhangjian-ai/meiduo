@@ -161,7 +161,6 @@ class UserAddressSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         mobile = attrs.get('mobile')
-        print(attrs)
         if not re.match(r'^1[3-9]\d{9}$', mobile):
             raise serializers.ValidationError('手机号错误')
         return attrs
