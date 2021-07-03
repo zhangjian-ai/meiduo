@@ -17893,3 +17893,4 @@ INFO 2021-07-03 15:53:24,705 basehttp 157 "POST /login/ HTTP/1.1" 200 245
 INFO 2021-07-03 15:53:25,999 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
 INFO 2021-07-03 16:00:05,054 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
 INFO 2021-07-03 16:00:05,531 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 16:09:38,653 autoreload 617 Watching for file changes with StatReloader
