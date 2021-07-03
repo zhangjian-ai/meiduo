@@ -54,7 +54,7 @@ class Address(BaseModel):
     place = models.CharField(max_length=50, verbose_name='地址')
     mobile = models.CharField(max_length=11, verbose_name='手机号')
     tel = models.CharField(max_length=20, null=True, blank=True, default='', verbose_name='固定电话')
-    email = models.CharField(max_length=20, null=True, blank=True, default='', verbose_name='邮箱')
+    email = models.CharField(max_length=50, null=True, blank=True, default='', verbose_name='邮箱')
     is_deleted = models.BooleanField(default=False, verbose_name='逻辑删除')
     is_default = models.BooleanField(default=False, verbose_name='默认地址')
 
