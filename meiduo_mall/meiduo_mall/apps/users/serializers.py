@@ -154,7 +154,10 @@ class UserAddressSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Address
-        exclude = ['user', 'is_deleted', 'is_default', 'update_time', 'create_time']
+        exclude = ['user', 'is_deleted', 'update_time', 'create_time']
+
+        # 修复：修改是默认地址的收货地址时，删除掉了默认地址标签
+        read_only_fields = ('is_default')
 
     def validate(self, attrs):
         mobile = attrs.get('mobile')
