@@ -17788,3 +17788,106 @@ INFO 2021-07-03 15:08:13,260 basehttp 157 "POST /login/ HTTP/1.1" 200 245
 INFO 2021-07-03 15:08:14,471 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
 INFO 2021-07-03 15:09:46,400 basehttp 157 "POST /login/ HTTP/1.1" 200 245
 INFO 2021-07-03 15:09:47,598 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:38:44,771 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:38:49,189 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+ERROR 2021-07-03 15:38:50,069 log 224 Internal Server Error: /address/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py", line 121, in post
+    data['title'] = data.get('receiver')
+  File "/Library/Python/3.8/site-packages/django/http/request.py", line 491, in __setitem__
+    self._assert_mutable()
+  File "/Library/Python/3.8/site-packages/django/http/request.py", line 488, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+ERROR 2021-07-03 15:38:50,074 basehttp 157 "POST /address/ HTTP/1.1" 500 103455
+INFO 2021-07-03 15:39:36,933 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:39:37,301 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:39:42,155 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+ERROR 2021-07-03 15:39:42,997 log 224 Internal Server Error: /address/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py", line 122, in post
+    data['title'] = data.get('receiver')
+  File "/Library/Python/3.8/site-packages/django/http/request.py", line 491, in __setitem__
+    self._assert_mutable()
+  File "/Library/Python/3.8/site-packages/django/http/request.py", line 488, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+ERROR 2021-07-03 15:39:43,001 basehttp 157 "POST /address/ HTTP/1.1" 500 103476
+INFO 2021-07-03 15:41:10,092 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:41:10,535 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:41:13,625 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 15:41:14,463 log 224 Bad Request: /address/
+WARNING 2021-07-03 15:41:14,463 basehttp 157 "POST /address/ HTTP/1.1" 400 338
+INFO 2021-07-03 15:42:30,684 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:42:31,026 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:43:11,218 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 15:43:11,974 log 224 Bad Request: /address/
+WARNING 2021-07-03 15:43:11,974 basehttp 157 "POST /address/ HTTP/1.1" 400 73
+INFO 2021-07-03 15:43:44,810 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:43:45,222 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:43:49,424 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 15:43:50,178 log 224 Bad Request: /address/
+WARNING 2021-07-03 15:43:50,178 basehttp 157 "POST /address/ HTTP/1.1" 400 73
+INFO 2021-07-03 15:44:13,060 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+ERROR 2021-07-03 15:44:13,519 log 224 Internal Server Error: /address
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/utils/deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "/Library/Python/3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Library/Python/3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/address/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2021-07-03 15:44:13,521 basehttp 157 "POST /address HTTP/1.1" 500 72987
+INFO 2021-07-03 15:45:32,258 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 15:45:32,983 log 224 Bad Request: /address/
+WARNING 2021-07-03 15:45:32,983 basehttp 157 "POST /address/ HTTP/1.1" 400 73
+INFO 2021-07-03 15:48:31,614 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 15:48:32,409 log 224 Bad Request: /address/
+WARNING 2021-07-03 15:48:32,410 basehttp 157 "POST /address/ HTTP/1.1" 400 73
+INFO 2021-07-03 15:50:36,456 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:50:37,797 basehttp 157 "POST /address/ HTTP/1.1" 200 28
+INFO 2021-07-03 15:51:13,760 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 15:51:14,535 log 224 Unsupported Media Type: /address/
+WARNING 2021-07-03 15:51:14,536 basehttp 157 "PUT /address/ HTTP/1.1" 415 66
+INFO 2021-07-03 15:52:01,506 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py changed, reloading.
+INFO 2021-07-03 15:52:03,892 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 15:52:46,496 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+WARNING 2021-07-03 15:52:47,270 log 224 Unsupported Media Type: /address/
+WARNING 2021-07-03 15:52:47,271 basehttp 157 "PUT /address/ HTTP/1.1" 415 66
+INFO 2021-07-03 15:53:24,705 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 15:53:25,999 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
