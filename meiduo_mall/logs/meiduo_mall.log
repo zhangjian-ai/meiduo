@@ -17894,3 +17894,55 @@ INFO 2021-07-03 15:53:25,999 basehttp 157 "PUT /address/ HTTP/1.1" 200 28
 INFO 2021-07-03 16:00:05,054 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/settings/settings_dev.py changed, reloading.
 INFO 2021-07-03 16:00:05,531 autoreload 617 Watching for file changes with StatReloader
 INFO 2021-07-03 16:09:38,653 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 16:41:16,586 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 16:41:35,481 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+ERROR 2021-07-03 16:41:36,420 log 224 Internal Server Error: /address/
+Traceback (most recent call last):
+  File "/Library/Python/3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Python/3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Library/Python/3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Python/3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/views.py", line 113, in get
+    'address': serializer.data
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "/Library/Python/3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 1033, in get_fields
+    extra_kwargs = self.get_extra_kwargs()
+  File "/Library/Python/3.8/site-packages/rest_framework/serializers.py", line 1357, in get_extra_kwargs
+    raise TypeError(
+TypeError: The `read_only_fields` option must be a list or tuple. Got str.
+ERROR 2021-07-03 16:41:36,426 basehttp 157 "GET /address/ HTTP/1.1" 500 139175
+INFO 2021-07-03 16:42:06,473 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/serializers.py changed, reloading.
+INFO 2021-07-03 16:42:06,829 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 16:42:13,744 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 16:42:16,132 basehttp 157 "GET /address/ HTTP/1.1" 200 2721
+INFO 2021-07-03 16:43:18,296 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/users/serializers.py changed, reloading.
+INFO 2021-07-03 16:43:20,229 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-03 16:43:24,701 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-03 16:43:27,094 basehttp 157 "GET /address/ HTTP/1.1" 200 2721
