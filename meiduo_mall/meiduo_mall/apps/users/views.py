@@ -135,9 +135,8 @@ class AddressView(APIView):
             try:
                 # 修改当前地址为默认地址
                 instance = Address.objects.get(id=data.get('id'))
-
             except Address.DoesNotExist:
-                return Response({'msg': '地址信息错误'}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({'msg': '要修改的地址信息不存在'}, status=status.HTTP_400_BAD_REQUEST)
             else:
                 try:
                     # 先把原来的该用户下所有地址都重置为不是默认地址
@@ -156,7 +155,7 @@ class AddressView(APIView):
             try:
                 instance = Address.objects.get(id=data.get('id'))
             except Address.DoesNotExist:
-                return Response({'msg': '用户信息错误'}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({'msg': '要修改的地址信息不存在'}, status=status.HTTP_400_BAD_REQUEST)
             else:
                 serializer = UserAddressSerializer(instance, data)
                 serializer.is_valid(raise_exception=True)
