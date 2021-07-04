@@ -17946,3 +17946,18 @@ INFO 2021-07-03 16:43:18,296 autoreload 240 /Users/zhangjian/PycharmProjects/mei
 INFO 2021-07-03 16:43:20,229 autoreload 617 Watching for file changes with StatReloader
 INFO 2021-07-03 16:43:24,701 basehttp 157 "POST /login/ HTTP/1.1" 200 245
 INFO 2021-07-03 16:43:27,094 basehttp 157 "GET /address/ HTTP/1.1" 200 2721
+INFO 2021-07-04 17:11:45,212 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-04 17:11:59,157 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-04 17:12:00,053 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+WARNING 2021-07-04 17:12:00,392 log 224 Bad Request: /cart/
+WARNING 2021-07-04 17:12:00,393 basehttp 157 "POST /cart/ HTTP/1.1" 400 37
+INFO 2021-07-04 17:12:48,927 autoreload 240 /Users/zhangjian/PycharmProjects/meiduo/meiduo_mall/meiduo_mall/apps/carts/views.py changed, reloading.
+INFO 2021-07-04 17:12:49,242 autoreload 617 Watching for file changes with StatReloader
+INFO 2021-07-04 17:17:29,751 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-04 17:17:30,636 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+WARNING 2021-07-04 17:17:31,025 log 224 Bad Request: /cart/
+WARNING 2021-07-04 17:17:31,025 basehttp 157 "POST /cart/ HTTP/1.1" 400 37
+INFO 2021-07-04 17:18:33,671 basehttp 157 "POST /login/ HTTP/1.1" 200 245
+INFO 2021-07-04 17:18:34,458 basehttp 157 "POST /cart/ HTTP/1.1" 201 48
+WARNING 2021-07-04 17:18:34,827 log 224 Bad Request: /cart/
+WARNING 2021-07-04 17:18:34,828 basehttp 157 "POST /cart/ HTTP/1.1" 400 37
