@@ -34,7 +34,7 @@ class CartView(APIView):
         spec = valid_data.get('spec')
 
         # 新增规格校验，如果商品规格未勾选则返回无效请求
-        if spec is None:
+        if spec is None or spec == "":
             return Response({"msg": "请勾选商品规格"}, status=status.HTTP_400_BAD_REQUEST)
 
         # 判定用户是否登陆且认证通过
