@@ -59,11 +59,13 @@ axios.interceptors.response.use(
                             router.replace({
                                 name: 'login',
                                 query: { redirect: router.currentRoute.fullPath }  // 登陆之后再回到当前页面
-                            })
+                            });
+                            return;
                         })
                         .catch(() => {
                             store.commit('setStatus');
                             router.go(0);  // 刷新一下当前页面
+                            return;
                         })
                     break;
                 case 400:
