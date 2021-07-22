@@ -7,7 +7,6 @@ from rest_framework.views import APIView
 
 from meiduo_mall.libs import constants
 
-# from meiduo_mall.libs.yuntongxun.sms import CCP
 from celery_tasks.sms import tasks
 
 logger = logging.getLogger('django')
@@ -21,7 +20,6 @@ class SMSCodeView(APIView):
     def get(self, request, mobile):
         # 创建redis链接对象
         redis_conn = get_redis_connection('verify_codes')
-
 
         # 校验60s内不能重复发送短信
         send_flag = redis_conn.get('send_flag_%s' % mobile)

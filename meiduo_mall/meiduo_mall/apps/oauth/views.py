@@ -115,10 +115,10 @@ class DTAuthUserView(APIView):
                         redirect_uri=settings.DT_REDIRECT_URI, app_key=settings.DT_APP_KEY)
         loginTmpCode = request.query_params.get('loginTmpCode', '')
 
-        url = oauth.get_dt_url()
+        url = oauth.get_dt_url(loginTmpCode)
 
-        if loginTmpCode:
-            url = oauth.get_dt_url(loginTmpCode)
+        # if loginTmpCode:
+        #     url = oauth.get_dt_url(loginTmpCode)
 
         return Response({'url': url})
 
@@ -142,9 +142,10 @@ class DTAuthBindUserView(APIView):
         try:
             unionid = oauth.get_unionid(code)
 
+            # 获取用户详情
             # access_token = oauth.get_access_token()
             # userid = oauth.get_userid(access_token, unionid)
-            # user_detail = oauth.get_user_detail(userid, access_token, unionid)
+            # user_detail = oauth.get_user_detail(userid, access_token)
         except Exception:
             logger.info('钉钉服务器异常')
             return Response({'msg': '钉钉服务器异常'}, status=status.HTTP_503_SERVICE_UNAVAILABLE)
