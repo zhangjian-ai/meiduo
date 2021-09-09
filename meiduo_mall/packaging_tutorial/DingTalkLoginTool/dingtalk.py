@@ -8,7 +8,7 @@ import json
 import requests
 
 
-class OAuthDT:
+class AuthDT:
     """钉钉登陆工具类"""
 
     def __init__(self, appid=None, app_key=None, app_secret=None, redirect_uri=None, state=None):
@@ -19,13 +19,7 @@ class OAuthDT:
         self.state = state
 
     def get_dt_url(self, loginTmpCode=None):
-        """
-        根据是否传入 loginTmpCode 返回不同阶段的url
-            - 不传入loginTmpCode时，返回钉钉二维码的url
-            - 传入loginTmpCode时，返回回调url并携带code参数
-        :param loginTmpCode: 钉钉扫码后的登陆code
-        :return: url
-        """
+        """根据是否传入 loginTmpCode 返回不同阶段的url"""
         # DT登录url参数组建
         url_dict = {
             'appid': self.app_key,  # 注意这里的appid实际上需要填入appkey
@@ -35,7 +29,7 @@ class OAuthDT:
             'state': 'STATE'
         }
 
-        if loginTmpCode:
+        if loginTmpCode is not None:
             url_dict['loginTmpCode'] = loginTmpCode
 
         # 构建url
@@ -45,7 +39,7 @@ class OAuthDT:
     def get_unionid(self, code):
         """
         登陆钉钉后台拿用户信息(unionid)
-        code从前端重回调地址中获取，再给返回给后端使用
+        code是前端重回调地址中拿到的再给返回给后端
         """
         # 构造时间戳
         timestamp = str(int(round(time.time() * 1000)))
@@ -126,4 +120,4 @@ class OAuthDT:
         except Exception:
             raise Exception('获取user_detail异常')
 
-        return res.json()
+        return res.json().get("result")

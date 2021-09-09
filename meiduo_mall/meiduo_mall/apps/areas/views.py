@@ -8,7 +8,7 @@ from .serializers import AreaSerializer, SubsAreaSerializer
 class AreasViewSet(CacheResponseMixin, ReadOnlyModelViewSet):
     """查询地址，就是查询所有和查询单一。这里继承视图集，其父类已经帮我们实现两种查询方法
     同时也是严格按照restful风格编写的。查所有/areas  ;查单一 /areas/(?P<id>\d+)
-pip    """
+    """
 
     # 由于我们将查所有和查单一的序列化器和模型对象不一样，所以我们重写以下方法作为判断
 

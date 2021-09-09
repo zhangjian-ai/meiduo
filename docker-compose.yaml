@@ -47,78 +47,78 @@ services:
     - "8000:8000"
 
 
-##---------------第一次构建时请打开注释----------------
-#
-#  redis:
-#    image: redis:4.0
-#    container_name: md_redis
-#    restart: always
-#    volumes:
-#    - /var/local/meiduo_mall/redis/data:/data
-#    - /var/local/meiduo_mall/redis/conf/redis.conf:/etc/redis/redis.conf:rw
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: "5m"
-#        max-file: "3"
-#    command: redis-server /etc/redis/redis.conf --appendonly yes
-#    ports:
-#      - "6379:6379"
-#
-#
-#  ES:
-#    image: delron/elasticsearch-ik:2.4.6-1.0
-#    container_name: md_ES
-#    restart: always
-#    volumes:
-#      - /var/local/meiduo_mall/elasticsearch/data:/usr/share/elasticsearch/data
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: "30m"
-#        max-file: "2"
-#    ports:
-#      - "9200:9200"
-#
-#
-#  tracker:
-#    # tracker默认端口22122，不用专门映射
-#    image: delron/fastdfs
-#    container_name: md_FastDFS-tracker
-#    restart: always
-#    volumes:
-#      - /var/local/meiduo_mall/fdfs/tracker:/var/fdfs
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: "30m"
-#        max-file: "2"
-#    network_mode: "host"
-#    command: tracker
-#
-#
-#  storage:
-#    # storage默认端口8888
-#    image: delron/fastdfs
-#    container_name: md_FastDFS-storage
-#    restart: always
-#    volumes:
-#      - /var/local/meiduo_mall/fdfs/storage:/var/fdfs
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: "250m"
-#        max-file: "5"
-#    network_mode: "host"
-#    command: storage
-#    environment:
-#      - TRACKER_SERVER=121.4.47.229:22122
-#    depends_on:
-#      - tracker
-#
-#
-##--------------主从数据库已单独部署完成---------------
-##---------------第一次构建时请打开注释----------------
+#---------------第一次构建时请打开注释----------------
+
+  redis:
+    image: redis:4.0
+    container_name: md_redis
+    restart: always
+    volumes:
+    - /var/local/meiduo_mall/redis/data:/data
+    - /var/local/meiduo_mall/redis/conf/redis.conf:/etc/redis/redis.conf:rw
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+    command: redis-server /etc/redis/redis.conf --appendonly yes
+    ports:
+      - "6379:6379"
+
+
+  ES:
+    image: delron/elasticsearch-ik:2.4.6-1.0
+    container_name: md_ES
+    restart: always
+    volumes:
+      - /var/local/meiduo_mall/elasticsearch/data:/usr/share/elasticsearch/data
+    logging:
+      driver: json-file
+      options:
+        max-size: "30m"
+        max-file: "2"
+    ports:
+      - "9200:9200"
+
+
+  tracker:
+    # tracker默认端口22122，不用专门映射
+    image: delron/fastdfs
+    container_name: md_FastDFS-tracker
+    restart: always
+    volumes:
+      - /var/local/meiduo_mall/fdfs/tracker:/var/fdfs
+    logging:
+      driver: json-file
+      options:
+        max-size: "30m"
+        max-file: "2"
+    network_mode: "host"
+    command: tracker
+
+
+  storage:
+    # storage默认端口8888
+    image: delron/fastdfs
+    container_name: md_FastDFS-storage
+    restart: always
+    volumes:
+      - /var/local/meiduo_mall/fdfs/storage:/var/fdfs
+    logging:
+      driver: json-file
+      options:
+        max-size: "250m"
+        max-file: "5"
+    network_mode: "host"
+    command: storage
+    environment:
+      - TRACKER_SERVER=121.4.47.229:22122
+    depends_on:
+      - tracker
+
+
+#--------------主从数据库已单独部署完成---------------
+#---------------第一次构建时请打开注释----------------
 
 
 

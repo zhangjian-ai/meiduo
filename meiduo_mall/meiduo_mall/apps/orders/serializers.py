@@ -122,10 +122,8 @@ class CommitOrderSerializer(serializers.ModelSerializer):
 
                         # 根据原始库存条件更新，返回更新的条目数，乐观锁
                         new_stock = origin_stock - origin_count
-                        print(new_stock)
                         new_sales = origin_sales + origin_count
                         res = SKU.objects.get(id=sku_id, stock=origin_stock)
-                        print(res)
                         if res:
                             # 如果res等于0，说明该条sku已经被人修改了，就不能继续保存。但是剩余库存仍然能满足购买需要，所以这里跳出当前循环即可
                             res.stock = new_stock

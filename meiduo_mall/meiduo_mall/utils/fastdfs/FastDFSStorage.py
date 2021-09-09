@@ -4,6 +4,7 @@ from django.utils.deconstruct import deconstructible
 from fdfs_client.client import Fdfs_client, get_tracker_conf
 
 
+# 存储类必须是deconstructible，以便在迁移中的字段上使用它时可以序列化。
 @deconstructible
 class FastDFSStorage(Storage):
     """自定义文件存储类"""
