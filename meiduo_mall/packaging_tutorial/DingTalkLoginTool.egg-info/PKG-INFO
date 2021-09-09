@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: DingTalkLoginTool
+Version: 0.0.2
+Summary: DingTalkLoginTool
+Home-page: https://github.com/zhangjian-ai/meiduo/tree/master/meiduo_mall/meiduo_mall/utils
+Author: jian.zhang
+Author-email: zj19180525254@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## DingTalkLoginTool
+
+### 钉钉扫码登陆第三方网站工具类
+
+
+使用前：
+
+    - 在钉钉开发者平台获取到appid, app_key, app_secret, redirect_uri 关键参数
+    
+    - 工具类封装四个方法，文档内部注释了每个方法的作用，最终获取到扫码用户的用户详情
+
+    - 该工具类可继续扩展，获取更多扫码用户所在企业的信息
+

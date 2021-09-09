@@ -35,7 +35,7 @@
         <el-divider direction="vertical"></el-divider>
         <el-link :underline="false" @click="$router.push({name: 'detail'})" icon="el-icon-user">用户中心</el-link>
         <el-divider direction="vertical"></el-divider>
-        <el-link :underline="false" @click="logout" icon="el-icon-switch-button">退出登陆</el-link>
+        <el-link :underline="false" @click="logout" icon="el-icon-turn-off">退出登陆</el-link>
       </el-col>
     </el-header>
     <el-main>
@@ -81,7 +81,6 @@ export default {
       this.username = this.$store.state.username;
       this.state = true;
     }
-
   }
 };
 </script>
