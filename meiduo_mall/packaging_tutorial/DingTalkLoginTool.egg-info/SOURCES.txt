@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-DingTalkLoginTool/__init__.py
-DingTalkLoginTool/dingtalk.py
-DingTalkLoginTool.egg-info/PKG-INFO
-DingTalkLoginTool.egg-info/SOURCES.txt
-DingTalkLoginTool.egg-info/dependency_links.txt
-DingTalkLoginTool.egg-info/top_level.txt
